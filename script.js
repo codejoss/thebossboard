@@ -70,14 +70,14 @@ const sampleData = [
 
 // Colores para las tarjetas
 const cardColors = [
-    'from-blue-50 to-indigo-100 border-blue-200',
-    'from-pink-50 to-rose-100 border-pink-200',
-    'from-green-50 to-emerald-100 border-green-200',
-    'from-yellow-50 to-amber-100 border-yellow-200',
-    'from-purple-50 to-violet-100 border-purple-200',
-    'from-cyan-50 to-teal-100 border-cyan-200',
-    'from-orange-50 to-red-100 border-orange-200',
-    'from-indigo-50 to-blue-100 border-indigo-200'
+    'from-stone-50 to-stone-100 border-stone-200',
+    /*'from-amber-50 to-amber-100 border-amber-200',
+    'from-yellow-50 to-yellow-100 border-yellow-200',
+    'from-orange-50 to-orange-100 border-orange-200',
+    'from-red-50 to-red-100 border-red-200',
+    'from-rose-50 to-rose-100 border-rose-200',
+    'from-pink-50 to-pink-100 border-pink-200',
+    'from-stone-100 to-stone-200 border-stone-300'*/
 ];
 
 // Módulo para manejar los datos
@@ -118,21 +118,21 @@ class CardBuilder {
                 <!-- Card Info -->
                 <div class="flex-1 flex flex-col justify-between text-center">
                     <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 line-clamp-2">
+                        <h3 class="text-lg font-semibold text-stone-800 mb-2 line-clamp-2">
                             ${person.nombre}
                         </h3>
-                        <p class="text-sm text-gray-600 mb-3">
+                        <p class="text-sm text-stone-600 mb-3">
                             ${person.ciudad_pais}
                         </p>
                     </div>
                     
                     <div class="space-y-3">
-                        <div class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md">
+                        <div class="bg-gradient-to-r from-stone-500 to-stone-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md">
                             ${person.profesion}
                         </div>
                         
                         <a href="${person.red_social}" 
-                           class="inline-flex items-center justify-center w-full px-4 py-2 bg-white/80 hover:bg-white text-gray-700 text-sm font-medium rounded-full transition-all duration-200 hover:shadow-md backdrop-blur-sm border border-white/50"
+                           class="inline-flex items-center justify-center w-full px-4 py-2 bg-stone-200/80 hover:bg-stone-200 text-stone-700 text-sm font-medium rounded-full transition-all duration-200 hover:shadow-md backdrop-blur-sm border border-stone-300/50"
                            target="_blank" rel="noopener noreferrer" 
                            onclick="event.stopPropagation()">
                             <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -230,8 +230,8 @@ class CommunityApp {
             this.cardsContainer.innerHTML = `
                 <div class="col-span-full flex items-center justify-center py-12">
                     <div class="text-center">
-                        <div class="animate-spin rounded-full h-12 w-12 border-4 border-white border-t-transparent mx-auto mb-4"></div>
-                        <p class="text-white text-xl font-light">Cargando comunidad...</p>
+                        <div class="animate-spin rounded-full h-12 w-12 border-4 border-stone-600 border-t-transparent mx-auto mb-4"></div>
+                        <p class="text-stone-700 text-xl font-light">Cargando comunidad...</p>
                     </div>
                 </div>
             `;
@@ -242,7 +242,7 @@ class CommunityApp {
             if (people.length === 0) {
                 this.cardsContainer.innerHTML = `
                     <div class="col-span-full text-center py-12">
-                        <p class="text-white text-xl font-light">No se pudieron cargar los datos de la comunidad.</p>
+                        <p class="text-stone-700 text-xl font-light">No se pudieron cargar los datos de la comunidad.</p>
                     </div>
                 `;
                 return;
@@ -258,7 +258,7 @@ class CommunityApp {
             console.error('Error al inicializar la aplicación:', error);
             this.cardsContainer.innerHTML = `
                 <div class="col-span-full text-center py-12">
-                    <p class="text-white text-xl font-light">Error al cargar la comunidad.</p>
+                    <p class="text-stone-700 text-xl font-light">Error al cargar la comunidad.</p>
                 </div>
             `;
         }
