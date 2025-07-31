@@ -1,73 +1,3 @@
-// Datos de ejemplo directamente en JavaScript (para evitar problemas de CORS)
-const sampleData = [
-    {
-        "nombre": "María González",
-        "edad": 28,
-        "ciudad_pais": "Madrid, España",
-        "profesion": "Desarrolladora Frontend",
-        "proposito_sueno": "Crear aplicaciones web que hagan la vida más fácil a las personas",
-        "motivacion": "La pasión por la tecnología y el impacto positivo que puede tener en la sociedad",
-        "red_social": "https://linkedin.com/in/mariagonzalez",
-        "mensaje": "Creo firmemente que la tecnología debe ser accesible para todos. Mi objetivo es crear experiencias digitales inclusivas y significativas.",
-        "foto": "https://images.unsplash.com/photo-1494790108755-2616b612b194?w=400&h=400&fit=crop&crop=face"
-    },
-    {
-        "nombre": "Carlos Rodríguez",
-        "edad": 35,
-        "ciudad_pais": "Ciudad de México, México",
-        "profesion": "Diseñador UX/UI",
-        "proposito_sueno": "Diseñar interfaces que conecten emocionalmente con los usuarios",
-        "motivacion": "La búsqueda constante de la simplicidad y elegancia en el diseño",
-        "red_social": "https://behance.net/carlosrodriguez",
-        "mensaje": "El buen diseño es invisible. Trabajo cada día para crear experiencias que sean intuitivas y memorables.",
-        "foto": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
-    },
-    {
-        "nombre": "Ana Martínez",
-        "edad": 31,
-        "ciudad_pais": "Buenos Aires, Argentina",
-        "profesion": "Product Manager",
-        "proposito_sueno": "Liderar equipos para crear productos que resuelvan problemas reales",
-        "motivacion": "El desafío de convertir ideas en productos exitosos que impacten positivamente",
-        "red_social": "https://twitter.com/anamartinez",
-        "mensaje": "La innovación surge cuando combinamos tecnología, diseño y una comprensión profunda de las necesidades humanas.",
-        "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face"
-    },
-    {
-        "nombre": "David Chen",
-        "edad": 29,
-        "ciudad_pais": "Barcelona, España",
-        "profesion": "Desarrollador Full Stack",
-        "proposito_sueno": "Construir sistemas escalables que soporten el crecimiento de startups",
-        "motivacion": "La satisfacción de resolver problemas complejos con código elegante",
-        "red_social": "https://github.com/davidchen",
-        "mensaje": "Cada línea de código es una oportunidad para hacer algo mejor. Me apasiona la arquitectura de software y las buenas prácticas.",
-        "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-    },
-    {
-        "nombre": "Laura Sánchez",
-        "edad": 26,
-        "ciudad_pais": "Bogotá, Colombia",
-        "profesion": "Data Scientist",
-        "proposito_sueno": "Usar datos para generar insights que transformen industrias",
-        "motivacion": "La capacidad de los datos para revelar patrones ocultos y predecir el futuro",
-        "red_social": "https://linkedin.com/in/laurasanchez",
-        "mensaje": "Los datos cuentan historias fascinantes. Mi trabajo es descifrar esas historias y convertirlas en decisiones inteligentes.",
-        "foto": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&h=400&fit=crop&crop=face"
-    },
-    {
-        "nombre": "Roberto Silva",
-        "edad": 33,
-        "ciudad_pais": "São Paulo, Brasil",
-        "profesion": "DevOps Engineer",
-        "proposito_sueno": "Automatizar procesos para que los equipos puedan enfocarse en crear",
-        "motivacion": "La eficiencia y la mejora continua de los procesos de desarrollo",
-        "red_social": "https://linkedin.com/in/robertosilva",
-        "mensaje": "La infraestructura debe ser invisible pero robusta. Trabajo para que los desarrolladores puedan desplegar sin preocupaciones.",
-        "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face"
-    }
-];
-
 // Colores para las tarjetas
 const cardColors = [
     'from-stone-50 to-stone-100 border-stone-200',
@@ -121,18 +51,18 @@ class CardBuilder {
                         <h3 class="text-lg font-semibold text-stone-800 mb-2 line-clamp-2">
                             ${person.nombre}
                         </h3>
-                        <p class="text-sm text-stone-600 mb-3">
+                        <p class="font-bold text-sm text-stone-500 mb-3">
                             ${person.ciudad_pais}
                         </p>
                     </div>
                     
                     <div class="space-y-3">
-                        <div class="bg-gradient-to-r from-stone-500 to-stone-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md">
+                        <div class="bg-gradient-to-r from-[#968279] to-[#8d766c] text-white px-4 py-2 rounded-full text-sm font-bold shadow-md">
                             ${person.profesion}
                         </div>
                         
                         <a href="${person.red_social}" 
-                           class="inline-flex items-center justify-center w-full px-4 py-2 bg-stone-200/80 hover:bg-stone-200 text-stone-700 text-sm font-medium rounded-full transition-all duration-200 hover:shadow-md backdrop-blur-sm border border-stone-300/50"
+                           class="inline-flex items-center justify-center w-full px-4 py-2 bg-stone-200/80 hover:bg-stone-200 text-stone-700 text-sm font-bold rounded-full transition-all duration-200 hover:shadow-md backdrop-blur-sm border border-stone-300/50"
                            target="_blank" rel="noopener noreferrer" 
                            onclick="event.stopPropagation()">
                             <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
