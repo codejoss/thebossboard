@@ -108,5 +108,16 @@
     "red_social": "https://www.instagram.com/pam_pdr",
     "mensaje": "No importa como lo hagas, lo importante es no quedarse en el intento.",
     "foto": "./assets/profileimg/Pamela-Perez.jpeg"
+  },
+  {
+    "nombre": "Nohemi Moro",
+    "edad": 30,
+    "ciudad_pais": "Puebla, México",
+    "profesion": "Contadora / Agente de viajes / creadora de contenido",
+    "proposito_sueno": "Enseñarle a las personas como pueden disfrutar viajar con mis tips, asi como yo llevarlos a conocer destinos",
+    "motivacion": "Mejorar en lo que hago.",
+    "red_social": "https://www.instagram.com/lienzo_viajero",
+    "mensaje": "Mucha constancia y paciencia que si se logra.",
+    "foto": "./assets/profileimg/Nohemi-Moro.jpeg"
   }
 ]
