@@ -80,7 +80,7 @@
     "nombre": "Veni González",
     "edad": 30,
     "ciudad_pais": "Ciudad de México",
-    "profesion": "Abogada / Farmasi / Nespresso",
+    "profesion": "Abogada / Emprendedora Farmasi / Nespresso",
     "proposito_sueno": "Llegar formar un equipo de mujeres empoderadas que desean ser dueñas de su tiempo su dinero y su estabilidad mental",
     "motivacion": "El aprender a  usar mis redes sociales para conectar con la gente",
     "red_social": "https://www.instagram.com/veni.glez",
@@ -113,11 +113,33 @@
     "nombre": "Nohemi Moro",
     "edad": 30,
     "ciudad_pais": "Puebla, México",
-    "profesion": "Contadora / Agente de viajes / creadora de contenido",
+    "profesion": "Contadora / Agente de viajes / Creadora de contenido",
     "proposito_sueno": "Enseñarle a las personas como pueden disfrutar viajar con mis tips, asi como yo llevarlos a conocer destinos",
     "motivacion": "Mejorar en lo que hago.",
     "red_social": "https://www.instagram.com/lienzo_viajero",
     "mensaje": "Mucha constancia y paciencia que si se logra.",
     "foto": "./assets/profileimg/Nohemi-Moro.jpeg"
+  },
+  {
+    "nombre": "Viridiana Rull",
+    "edad": 33,
+    "ciudad_pais": "Puebla, México",
+    "profesion": "Trabajo en Atomy",
+    "proposito_sueno": "Poder conectar con más mujeres y personas de otros países que les interese consumir inteligentemente.",
+    "motivacion": "El poder aprender a conectar con las personas y poder crear contenido en mis redes.",
+    "red_social": "https://www.instagram.com/viryrull",
+    "mensaje": "Mucha constancia y paciencia que si se logra.",
+    "foto": "./assets/profileimg/Viridiana-Rull.jpeg"
+  },
+  {
+    "nombre": "Andrea Montiel",
+    "edad": 38,
+    "ciudad_pais": "Texcoco, Edo. de México",
+    "profesion": "Abogada / Emprendedora Farmasi",
+    "proposito_sueno": "Sentirme útil, ser una mamá presente, sentirme feliz con lo que hago y ayudar a mujeres a generer ingresos desde casa sin tener que elegir o descuidar a los que más amas",
+    "motivacion": "Que son una comunidad, que hay guía, estrategia y seguimiento.",
+    "red_social": "https://www.instagram.com/andre_m.16",
+    "mensaje": "No esperes a sentirte lista, hazlo aunque por dentro te estés muriendo del miedo",
+    "foto": "./assets/profileimg/IMG_7734-Andrea-Montiel.jpeg"
   }
 ]
