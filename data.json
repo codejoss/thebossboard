@@ -110,7 +110,7 @@
     "foto": "./assets/profileimg/Pamela-Perez.jpeg"
   },
   {
-    "nombre": "Nohemi Mono",
+    "nombre": "Nohemi Moro",
     "edad": 30,
     "ciudad_pais": "Puebla, México",
     "profesion": "Contadora / Agente de viajes / creadora de contenido",
@@ -118,6 +118,6 @@
     "motivacion": "Mejorar en lo que hago.",
     "red_social": "https://www.instagram.com/lienzo_viajero",
     "mensaje": "Mucha constancia y paciencia que si se logra.",
-    "foto": "./assets/profileimg/Nohemi-Mono"
+    "foto": "./assets/profileimg/Nohemi-Moro.jpeg."
   }
 ]
