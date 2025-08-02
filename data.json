@@ -35,12 +35,78 @@
   {
     "nombre": "Pau Gatti",
     "edad": 38,
-    "ciudad_pais": "Puebla, México ",
+    "ciudad_pais": "Puebla, México",
     "profesion": "Agencia de viajes digital / Agente de viajes",
     "proposito_sueno": "Mi sueño es vivir de inspirar a más personas a viajar bonito y sin estrés, porque descubrir el mundo está más cerca de lo que mucha gente cree.",
     "motivacion": "Estoy emprendiendo para construir una vida en la que soy libre, plena y feliz. Quiero tener independencia profesional y económica, hacer lo que amo cada día y demostrarme que sí soy capaz de lograrlo. Pero con un poco de ayuda y una comunidad que apoye, sin lugar a dudas, hará más lindo el camino. Lo hago para vivir sin miedo, para crecer incluso cuando tiemblo, para disfrutar de mis logros y del camino. Cada paso fuera de mi zona de confort es un paso más hacia esa versión de mí que se atreve, que sueña, y que cumple.",
     "red_social": "https://linktr.ee/paugatti.travelagent?utm_source=linktree_profile_share&ltsid=a0e3e258-8e62-4cdf-bcc4-a50f72c9b24c",
     "mensaje": "Emprender no es fácil, a veces estás súper emocionada pasionada con lo que haces y a veces te llega el autosabotaje y creo que es normal. Pero hay que recordar siempre que lo importante está en confiar en que tus metas se cumplirán porque estás en acción constante y alineada con tu propósito",
     "foto": "./assets/profileimg/Ana_Paula_Gatti.jpeg"
+  },
+  {
+    "nombre": "angelica paredes sanchez",
+    "edad": 39,
+    "ciudad_pais": "Naucalpan, Edo. de México",
+    "profesion": "Diseñadora editorial / Emprendedora",
+    "proposito_sueno": "Mi sueño es poder tener esa libertad que te permite tener un trabajo remoto, con estabilidad financiera, yo elegir mis tiempos, horarios, poder viajar y no posponer más mis sueños. quiero crear una comunidad con más mujeres que las inspire a no quedarse en un lugar donde no son felices, donde su trabajo no es reconocido a que ellas trabajen por cumplir sus metas. Sueño con tener un equipo fuerte, crear comuidad, un equipo que accione por si solo, que no se tenga que jalar, un equipo que inspire, un equipo que se destaque, un equipo en el que las personas digan, yo quiero pertenecer y que vean que tomando pequeñas decisiones fuera del miedo se crean grandes cambios y se consiguen sueños.",
+    "motivacion": "Tener guía de una mujer que se ve que es clara, directa y que acciona y en la que puedo confiar para que me de los pasos",
+    "red_social": "https://www.instagram.com/angiecon.ie/",
+    "mensaje": "Este es el primer paso para algo más grande, estás aquí porque estás accionando.",
+    "foto": "./assets/profileimg/Angelica_Paredes.jpeg"
+  },
+  {
+    "nombre": "Carmen ladelosseguros",
+    "edad": "-",
+    "ciudad_pais": "Puebla, México",
+    "profesion": "Agente de seguros",
+    "proposito_sueno": "Acompañar a personas que desean proteger su vida, salud y futuro con empatía, claridad y estrategia. Porque asegurar es un acto de amor y visión.",
+    "motivacion": "La energía de Andrea",
+    "red_social": "https://linktr.ee/carmenmtzas",
+    "mensaje": "Que no esperen para empezar porque el tiempo pasa muy rápido",
+    "foto": "./assets/profileimg/Carmen-Martinez.jpeg"
+  },
+  {
+    "nombre": "Ana Karen González Romero",
+    "edad": 34,
+    "ciudad_pais": "Puebla, México",
+    "profesion": "Agente de seguros",
+    "proposito_sueno": "Construir un legado de protección, amor y conciencia financiera que transforme vidas empezando por la mía, la de mi hija y la de cada familia que confía en mí. Porque sé que una decisión hoy puede cambiar el destino de muchos mañana.",
+    "motivacion": "Porque creo en el poder de conectar desde lo real. Hoy más que nunca, lo digital me permite llevar mi mensaje a más mujeres y familias, con libertad y propósito. Pero lo que más valoro… es no hacerlo sola. Esta comunidad me inspira, me impulsa y me recuerda que siempre se puede crecer más, hacerlo mejor y creer más fuerte en mí.",
+    "red_social": "https://www.instagram.com/galez.seguros",
+    "mensaje": "Aquí encontré guía, motivación y una líder que no solo enseña, sino que acompaña. Y eso hace toda la diferencia.",
+    "foto": "./assets/profileimg/Ana-Karen-González.jpeg"
+  },
+  {
+    "nombre": "Veni González",
+    "edad": 30,
+    "ciudad_pais": "Ciudad de México",
+    "profesion": "Abogada / Farmasi / Nespresso",
+    "proposito_sueno": "Llegar formar un equipo de mujeres empoderadas que desean ser dueñas de su tiempo su dinero y su estabilidad mental",
+    "motivacion": "El aprender a  usar mis redes sociales para conectar con la gente",
+    "red_social": "https://www.instagram.com/veni.glez",
+    "mensaje": "Confía en ti, esto es una gran oportunidad para ti, hazlo con el corazon.",
+    "foto": "./assets/profileimg/Veronica-Gonzalez.jpeg"
+  },
+  {
+    "nombre": "Carmen Quezada",
+    "edad": 34,
+    "ciudad_pais": "Ciudad de México",
+    "profesion": "Networker y Líder de equipo",
+    "proposito_sueno": "Inspirar a mujeres a construir su libertad financiera",
+    "motivacion": "El acompañamiento",
+    "red_social": "https://www.instagram.com/carmen_quezada11",
+    "mensaje": "Primero créelo para crearlo! Todo es posible.",
+    "foto": "./assets/profileimg/Carmen-Quezada.jpeg"
+  },
+  {
+    "nombre": "Pam",
+    "edad": 46,
+    "ciudad_pais": "Estado de México",
+    "profesion": "Network en el área de bienestar y salud",
+    "proposito_sueno": "Tener un negocio sustentable que me permita seguir trabajando desde casa, disponer de mi tiempo y horarios para poder estar presente con mis hijos y actividades personales",
+    "motivacion": "Aprender más sobre redes sociales y marca personal y poder conectar con más mujeres de diferentes nichos para conectar, apoyar y refrescar ideas y procesos.",
+    "red_social": "https://www.instagram.com/pam_pdr",
+    "mensaje": "No importa como lo hagas, lo importante es no quedarse en el intento.",
+    "foto": "./assets/profileimg/Pamela-Perez.jpeg"
   }
 ]
