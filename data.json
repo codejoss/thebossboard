@@ -11,37 +11,26 @@
     "foto": "./assets/profileimg/andrea_cazarin.jpg"
   },
   {
-    "nombre": "Elv Hernández",
-    "edad": 56,
-    "ciudad_pais": "Merida, Yucatán, México",
-    "profesion": "Emprendedora / Farmasi",
-    "proposito_sueno": "Apoyar a mujeres a ser libres financieramente al igual que yo.",
-    "motivacion": "Las publicaciones de Andrea",
-    "red_social": "https://www.instagram.com/elv_mujer_libre",
-    "mensaje": "Todas podemos !!!",
-    "foto": "./assets/profileimg/elvira_hernandez.jpeg"
-  },
-  {
-    "nombre": "Michelle Caballero Carranco",
-    "edad": 27,
-    "ciudad_pais": "Tijuana, Baja California, México ",
-    "profesion": "Ing. Industrial / Creadora de contenido",
-    "proposito_sueno": "Mi sueño es crear una comunidad en redes y trabajar en redes y vivir de ello.",
-    "motivacion": "A no estar sola, compartir y crear con otras mujeres y crecer con ellas.",
-    "red_social": "https://www.tiktok.com/@michelcarranco",
-    "mensaje": "Te va a servir mucho esta nueva experiencia. Te ayudará no solo a crecer en redes sociales sino como persona, ya que agarraras más confianza para hablar en cámara 📷 ",
-    "foto": "./assets/profileimg/Michelle_Caballero_Carranco.jpg"
-  },
-  {
-    "nombre": "Pau Gatti",
-    "edad": 38,
+    "nombre": "Ana Karen González Romero",
+    "edad": 34,
     "ciudad_pais": "Puebla, México",
-    "profesion": "Agencia de viajes digital / Agente de viajes",
-    "proposito_sueno": "Mi sueño es vivir de inspirar a más personas a viajar bonito y sin estrés, porque descubrir el mundo está más cerca de lo que mucha gente cree.",
-    "motivacion": "Estoy emprendiendo para construir una vida en la que soy libre, plena y feliz. Quiero tener independencia profesional y económica, hacer lo que amo cada día y demostrarme que sí soy capaz de lograrlo. Pero con un poco de ayuda y una comunidad que apoye, sin lugar a dudas, hará más lindo el camino. Lo hago para vivir sin miedo, para crecer incluso cuando tiemblo, para disfrutar de mis logros y del camino. Cada paso fuera de mi zona de confort es un paso más hacia esa versión de mí que se atreve, que sueña, y que cumple.",
-    "red_social": "https://linktr.ee/paugatti.travelagent?utm_source=linktree_profile_share&ltsid=a0e3e258-8e62-4cdf-bcc4-a50f72c9b24c",
-    "mensaje": "Emprender no es fácil, a veces estás súper emocionada pasionada con lo que haces y a veces te llega el autosabotaje y creo que es normal. Pero hay que recordar siempre que lo importante está en confiar en que tus metas se cumplirán porque estás en acción constante y alineada con tu propósito",
-    "foto": "./assets/profileimg/Ana_Paula_Gatti.jpeg"
+    "profesion": "Agente de seguros",
+    "proposito_sueno": "Construir un legado de protección, amor y conciencia financiera que transforme vidas empezando por la mía, la de mi hija y la de cada familia que confía en mí. Porque sé que una decisión hoy puede cambiar el destino de muchos mañana.",
+    "motivacion": "Porque creo en el poder de conectar desde lo real. Hoy más que nunca, lo digital me permite llevar mi mensaje a más mujeres y familias, con libertad y propósito. Pero lo que más valoro… es no hacerlo sola. Esta comunidad me inspira, me impulsa y me recuerda que siempre se puede crecer más, hacerlo mejor y creer más fuerte en mí.",
+    "red_social": "https://www.instagram.com/galez.seguros",
+    "mensaje": "Aquí encontré guía, motivación y una líder que no solo enseña, sino que acompaña. Y eso hace toda la diferencia.",
+    "foto": "./assets/profileimg/Ana-Karen-González.jpeg"
+  },
+  {
+    "nombre": "Carmen Quezada",
+    "edad": 34,
+    "ciudad_pais": "Ciudad de México",
+    "profesion": "Networker y Líder de equipo",
+    "proposito_sueno": "Inspirar a mujeres a construir su libertad financiera",
+    "motivacion": "El acompañamiento",
+    "red_social": "https://www.instagram.com/carmen_quezada11",
+    "mensaje": "Primero créelo para crearlo! Todo es posible.",
+    "foto": "./assets/profileimg/Carmen-Quezada.jpeg"
   },
   {
     "nombre": "angelica paredes sanchez",
@@ -66,15 +55,26 @@
     "foto": "./assets/profileimg/Carmen-Martinez.jpeg"
   },
   {
-    "nombre": "Ana Karen González Romero",
-    "edad": 34,
+    "nombre": "Michelle Caballero Carranco",
+    "edad": 27,
+    "ciudad_pais": "Tijuana, Baja California, México ",
+    "profesion": "Ing. Industrial / Creadora de contenido",
+    "proposito_sueno": "Mi sueño es crear una comunidad en redes y trabajar en redes y vivir de ello.",
+    "motivacion": "A no estar sola, compartir y crear con otras mujeres y crecer con ellas.",
+    "red_social": "https://www.tiktok.com/@michelcarranco",
+    "mensaje": "Te va a servir mucho esta nueva experiencia. Te ayudará no solo a crecer en redes sociales sino como persona, ya que agarraras más confianza para hablar en cámara 📷 ",
+    "foto": "./assets/profileimg/Michelle_Caballero_Carranco.jpg"
+  },
+  {
+    "nombre": "Pau Gatti",
+    "edad": 38,
     "ciudad_pais": "Puebla, México",
-    "profesion": "Agente de seguros",
-    "proposito_sueno": "Construir un legado de protección, amor y conciencia financiera que transforme vidas empezando por la mía, la de mi hija y la de cada familia que confía en mí. Porque sé que una decisión hoy puede cambiar el destino de muchos mañana.",
-    "motivacion": "Porque creo en el poder de conectar desde lo real. Hoy más que nunca, lo digital me permite llevar mi mensaje a más mujeres y familias, con libertad y propósito. Pero lo que más valoro… es no hacerlo sola. Esta comunidad me inspira, me impulsa y me recuerda que siempre se puede crecer más, hacerlo mejor y creer más fuerte en mí.",
-    "red_social": "https://www.instagram.com/galez.seguros",
-    "mensaje": "Aquí encontré guía, motivación y una líder que no solo enseña, sino que acompaña. Y eso hace toda la diferencia.",
-    "foto": "./assets/profileimg/Ana-Karen-González.jpeg"
+    "profesion": "Agencia de viajes digital / Agente de viajes",
+    "proposito_sueno": "Mi sueño es vivir de inspirar a más personas a viajar bonito y sin estrés, porque descubrir el mundo está más cerca de lo que mucha gente cree.",
+    "motivacion": "Estoy emprendiendo para construir una vida en la que soy libre, plena y feliz. Quiero tener independencia profesional y económica, hacer lo que amo cada día y demostrarme que sí soy capaz de lograrlo. Pero con un poco de ayuda y una comunidad que apoye, sin lugar a dudas, hará más lindo el camino. Lo hago para vivir sin miedo, para crecer incluso cuando tiemblo, para disfrutar de mis logros y del camino. Cada paso fuera de mi zona de confort es un paso más hacia esa versión de mí que se atreve, que sueña, y que cumple.",
+    "red_social": "https://linktr.ee/paugatti.travelagent?utm_source=linktree_profile_share&ltsid=a0e3e258-8e62-4cdf-bcc4-a50f72c9b24c",
+    "mensaje": "Emprender no es fácil, a veces estás súper emocionada pasionada con lo que haces y a veces te llega el autosabotaje y creo que es normal. Pero hay que recordar siempre que lo importante está en confiar en que tus metas se cumplirán porque estás en acción constante y alineada con tu propósito",
+    "foto": "./assets/profileimg/Ana_Paula_Gatti.jpeg"
   },
   {
     "nombre": "Veni González",
@@ -86,17 +86,6 @@
     "red_social": "https://www.instagram.com/veni.glez",
     "mensaje": "Confía en ti, esto es una gran oportunidad para ti, hazlo con el corazon.",
     "foto": "./assets/profileimg/Veronica-Gonzalez.jpeg"
-  },
-  {
-    "nombre": "Carmen Quezada",
-    "edad": 34,
-    "ciudad_pais": "Ciudad de México",
-    "profesion": "Networker y Líder de equipo",
-    "proposito_sueno": "Inspirar a mujeres a construir su libertad financiera",
-    "motivacion": "El acompañamiento",
-    "red_social": "https://www.instagram.com/carmen_quezada11",
-    "mensaje": "Primero créelo para crearlo! Todo es posible.",
-    "foto": "./assets/profileimg/Carmen-Quezada.jpeg"
   },
   {
     "nombre": "Pam",
@@ -119,6 +108,17 @@
     "red_social": "https://www.instagram.com/lienzo_viajero",
     "mensaje": "Mucha constancia y paciencia que si se logra.",
     "foto": "./assets/profileimg/Nohemi-Moro.jpeg"
+  },
+  {
+    "nombre": "Elv Hernández",
+    "edad": 56,
+    "ciudad_pais": "Merida, Yucatán, México",
+    "profesion": "Emprendedora / Farmasi",
+    "proposito_sueno": "Apoyar a mujeres a ser libres financieramente al igual que yo.",
+    "motivacion": "Las publicaciones de Andrea",
+    "red_social": "https://www.instagram.com/elv_mujer_libre",
+    "mensaje": "Todas podemos !!!",
+    "foto": "./assets/profileimg/elvira_hernandez.jpeg"
   },
   {
     "nombre": "Viridiana Rull",
