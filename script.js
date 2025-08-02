@@ -48,7 +48,7 @@ class CardBuilder {
                 <!-- Card Info -->
                 <div class="flex-1 flex flex-col justify-between text-center">
                     <div>
-                        <h3 class="text-lg font-semibold text-stone-800 mb-2 line-clamp-2">
+                        <h3 class="text-lg font-semibold text-stone-800 mb-2 line-clamp-2 capitalize">
                             ${person.nombre}
                         </h3>
                         <p class="font-bold text-sm text-stone-500 mb-3">
