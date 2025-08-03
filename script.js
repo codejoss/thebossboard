@@ -1,3 +1,18 @@
+// Sample data when the data.json don't load
+const sampleData = [
+    {
+    "nombre": "Andrea Cazarín",
+    "edad": 31,
+    "ciudad_pais": "Puebla, México",
+    "profesion": "Fundadora de The Boss Room VIP",
+    "proposito_sueno": "Empoderar a mujeres para que descubran su poder personal, construyan libertad financiera desde el mundo digital y se atrevan a vivir una vida que se sienta libre, coherente y suya.",
+    "motivacion": "Ver a más mujeres apostando por ellas mismas, creando libertad con lo que aman y demostrando que sí pueden. Me mueve saber que no tienen que hacerlo solas, y que yo puedo ser parte de ese impulso.",
+    "red_social": "https://www.instagram.com/_andreacazarin",
+    "mensaje": "Que no están solas. Que este espacio es para crecer, equivocarnos, levantarnos y lograrlo juntas. Aquí hay apoyo real, impulso y herramientas para que construyas tu camino con propósito y poder.",
+    "foto": "./assets/profileimg/andrea_cazarin.jpg"
+  }
+]
+
 // Colores para las tarjetas
 const cardColors = [
     'from-stone-50 to-stone-100 border-stone-200',
@@ -33,16 +48,16 @@ class CardBuilder {
         const cardColor = cardColors[index % cardColors.length];
         
         const card = document.createElement('div');
-        card.className = `group bg-gradient-to-br ${cardColor} backdrop-blur-sm border rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-slide-up`;
-        card.style.animationDelay = `${index * 100}ms`;
+        card.className = `group bg-gradient-to-br ${cardColor} backdrop-blur-sm border rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 opacity-0 translate-y-8`;
         card.setAttribute('data-person', JSON.stringify(person));
+        card.setAttribute('data-index', index);
         
         card.innerHTML = `
             <div class="flex flex-col h-full">
                 <!-- Profile Photo -->
                 <div class="flex justify-center mb-4">
                     <img src="${person.foto}" alt="${person.nombre}" 
-                         class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:shadow-xl">
+                         class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg transition-transform duration-300 group-hover:shadow-xl">
                 </div>
                 
                 <!-- Card Info -->
@@ -83,6 +98,19 @@ class CardBuilder {
         people.forEach((person, index) => {
             const card = this.createCard(person, index);
             container.appendChild(card);
+        });
+        
+        // Animate cards in with staggered delay
+        this.animateCardsIn(container);
+    }
+    
+    static animateCardsIn(container) {
+        const cards = container.querySelectorAll('[data-index]');
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.remove('opacity-0', 'translate-y-8');
+                card.classList.add('opacity-100', 'translate-y-0');
+            }, index * 100); // Stagger each card by 100ms
         });
     }
 }
@@ -178,11 +206,14 @@ class CommunityApp {
                 return;
             }
             
-            // Renderizar tarjetas
-            CardBuilder.renderCards(people, this.cardsContainer);
-            
-            // Agregar event listeners a las tarjetas
-            this.setupCardListeners();
+            // Add a small delay before rendering cards to ensure smooth transition from loading
+            setTimeout(() => {
+                // Renderizar tarjetas
+                CardBuilder.renderCards(people, this.cardsContainer);
+                
+                // Agregar event listeners a las tarjetas
+                this.setupCardListeners();
+            }, 200);
             
         } catch (error) {
             console.error('Error al inicializar la aplicación:', error);
