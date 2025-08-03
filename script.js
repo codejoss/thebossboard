@@ -1,3 +1,18 @@
+// Sample data when the data.json don't load
+const sampleData = [
+    {
+    "nombre": "Andrea Cazarín",
+    "edad": 31,
+    "ciudad_pais": "Puebla, México",
+    "profesion": "Fundadora de The Boss Room VIP",
+    "proposito_sueno": "Empoderar a mujeres para que descubran su poder personal, construyan libertad financiera desde el mundo digital y se atrevan a vivir una vida que se sienta libre, coherente y suya.",
+    "motivacion": "Ver a más mujeres apostando por ellas mismas, creando libertad con lo que aman y demostrando que sí pueden. Me mueve saber que no tienen que hacerlo solas, y que yo puedo ser parte de ese impulso.",
+    "red_social": "https://www.instagram.com/_andreacazarin",
+    "mensaje": "Que no están solas. Que este espacio es para crecer, equivocarnos, levantarnos y lograrlo juntas. Aquí hay apoyo real, impulso y herramientas para que construyas tu camino con propósito y poder.",
+    "foto": "./assets/profileimg/andrea_cazarin.jpg"
+  }
+]
+
 // Colores para las tarjetas
 const cardColors = [
     'from-stone-50 to-stone-100 border-stone-200',
@@ -42,7 +57,7 @@ class CardBuilder {
                 <!-- Profile Photo -->
                 <div class="flex justify-center mb-4">
                     <img src="${person.foto}" alt="${person.nombre}" 
-                         class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:shadow-xl">
+                         class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg transition-transform duration-300 group-hover:shadow-xl">
                 </div>
                 
                 <!-- Card Info -->
