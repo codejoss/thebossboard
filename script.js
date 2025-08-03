@@ -48,9 +48,9 @@ class CardBuilder {
         const cardColor = cardColors[index % cardColors.length];
         
         const card = document.createElement('div');
-        card.className = `group bg-gradient-to-br ${cardColor} backdrop-blur-sm border rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-slide-up`;
-        card.style.animationDelay = `${index * 100}ms`;
+        card.className = `group bg-gradient-to-br ${cardColor} backdrop-blur-sm border rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 opacity-0 translate-y-8`;
         card.setAttribute('data-person', JSON.stringify(person));
+        card.setAttribute('data-index', index);
         
         card.innerHTML = `
             <div class="flex flex-col h-full">
@@ -98,6 +98,19 @@ class CardBuilder {
         people.forEach((person, index) => {
             const card = this.createCard(person, index);
             container.appendChild(card);
+        });
+        
+        // Animate cards in with staggered delay
+        this.animateCardsIn(container);
+    }
+    
+    static animateCardsIn(container) {
+        const cards = container.querySelectorAll('[data-index]');
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.remove('opacity-0', 'translate-y-8');
+                card.classList.add('opacity-100', 'translate-y-0');
+            }, index * 100); // Stagger each card by 100ms
         });
     }
 }
@@ -193,11 +206,14 @@ class CommunityApp {
                 return;
             }
             
-            // Renderizar tarjetas
-            CardBuilder.renderCards(people, this.cardsContainer);
-            
-            // Agregar event listeners a las tarjetas
-            this.setupCardListeners();
+            // Add a small delay before rendering cards to ensure smooth transition from loading
+            setTimeout(() => {
+                // Renderizar tarjetas
+                CardBuilder.renderCards(people, this.cardsContainer);
+                
+                // Agregar event listeners a las tarjetas
+                this.setupCardListeners();
+            }, 200);
             
         } catch (error) {
             console.error('Error al inicializar la aplicación:', error);
