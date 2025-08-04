@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - The Boss Board</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-stone-300 to-stone-100 text-stone-800 font-sans antialiased">
+    <!-- Header -->
+    <header class="backdrop-blur-md border-b border-stone-500/20 py-8 bg-[#8d766c]">
+        <div class="container mx-auto px-6 text-center">
+            <img class="h-32 inline" src="./assets/images/logo/BossBoard-white.png" alt="The Boss Board Logo">
+            <p class="text-xl text-white font-bold animate-slide-up mt-4">
+                ¡Únete a nuestra comunidad de mujeres emprendedoras!
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="max-w-4xl mx-auto">
+            <!-- Formulario de Registro -->
+            <div class="bg-white rounded-2xl shadow-2xl p-8 mb-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-stone-800">
+                    📝 Formulario de Registro
+                </h2>
+                
+                <form id="registration-form" class="space-y-6">
+                    <!-- Información Personal -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="nombre" class="block text-sm font-semibold text-stone-700 mb-2">
+                                Nombre Completo *
+                            </label>
+                            <input type="text" id="nombre" name="nombre" required
+                                   class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-[#8d766c] focus:border-transparent transition-all duration-200"
+                                   placeholder="Ej: Ana Karen González Romero">
+                        </div>
+                        
+                        <div>
+                            <label for="edad" class="block text-sm font-semibold text-stone-700 mb-2">
+                                Edad *
+                            </label>
+                            <input type="number" id="edad" name="edad" required min="18" max="100"
+                                   class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-[#8d766c] focus:border-transparent transition-all duration-200"
+                                   placeholder="Ej: 34">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="ciudad_pais" class="block text-sm font-semibold text-stone-700 mb-2">
+                            Ciudad y País *
+                        </label>
+                        <input type="text" id="ciudad_pais" name="ciudad_pais" required
+                               class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-[#8d766c] focus:border-transparent transition-all duration-200"
+                               placeholder="Ej: Puebla, México">
+                    </div>
+
+                    <div>
+                        <label for="profesion" class="block text-sm font-semibold text-stone-700 mb-2">
+                            Profesión *
+                        </label>
+                        <input type="text" id="profesion" name="profesion" required
+                               class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-[#8d766c] focus:border-transparent transition-all duration-200"
+                               placeholder="Ej: Agente de seguros / Emprendedora">
+                    </div>
+
+                    <!-- Propósito y Sueño -->
+                    <div>
+                        <label for="proposito_sueno" class="block text-sm font-semibold text-stone-700 mb-2">
+                            Propósito/Sueño *
+                        </label>
+                        <textarea id="proposito_sueno" name="proposito_sueno" required rows="4"
+                                  class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-[#8d766c] focus:border-transparent transition-all duration-200 resize-none"
+                                  placeholder="Cuéntanos cuál es tu propósito y sueño..."></textarea>
+                    </div>
+
+                    <!-- Motivación -->
+                    <div>
+                        <label for="motivacion" class="block text-sm font-semibold text-stone-700 mb-2">
+                            ¿Qué te motivó a unirte a The Boss Room VIP? *
+                        </label>
+                        <textarea id="motivacion" name="motivacion" required rows="3"
+                                  class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-[#8d766c] focus:border-transparent transition-all duration-200 resize-none"
+                                  placeholder="Comparte tu motivación..."></textarea>
+                    </div>
+
+                    <!-- Red Social -->
+                    <div>
+                        <label for="red_social" class="block text-sm font-semibold text-stone-700 mb-2">
+                            Enlace a tu Red Social Principal *
+                        </label>
+                        <input type="url" id="red_social" name="red_social" required
+                               class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-[#8d766c] focus:border-transparent transition-all duration-200"
+                               placeholder="Ej: https://www.instagram.com/tu_usuario">
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div>
+                        <label for="mensaje" class="block text-sm font-semibold text-stone-700 mb-2">
+                            Mensaje para la Comunidad *
+                        </label>
+                        <textarea id="mensaje" name="mensaje" required rows="3"
+                                  class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-[#8d766c] focus:border-transparent transition-all duration-200 resize-none"
+                                  placeholder="Escribe un mensaje inspirador para la comunidad..."></textarea>
+                    </div>
+
+                    <!-- Foto de Perfil -->
+                    <div>
+                        <label for="foto" class="block text-sm font-semibold text-stone-700 mb-2">
+                            URL de tu Foto de Perfil *
+                        </label>
+                        <input type="url" id="foto" name="foto" required
+                               class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-[#8d766c] focus:border-transparent transition-all duration-200"
+                               placeholder="Ej: https://ejemplo.com/mi-foto.jpg">
+                        <p class="text-sm text-stone-500 mt-1">
+                            💡 Tip: Puedes subir tu foto a servicios como Imgur, Google Drive (con enlace público) o similar
+                        </p>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <div class="text-center pt-6">
+                        <button type="submit" 
+                                class="bg-gradient-to-r from-[#968279] to-[#8d766c] text-white font-bold py-4 px-8 rounded-full hover:from-stone-600 hover:to-stone-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
+                            📤 Subir Datos
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Información Adicional -->
+            <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200">
+                <h3 class="text-xl font-semibold text-stone-800 mb-4">ℹ️ Información Importante</h3>
+                <ul class="space-y-2 text-stone-600">
+                    <li>• Todos los campos marcados con * son obligatorios</li>
+                    <li>• Tu registro será revisado antes de aparecer en la comunidad</li>
+                    <li>• Recibirás una notificación cuando tu perfil sea aprobado</li>
+                    <li>• Asegúrate de que tu foto de perfil sea de buena calidad</li>
+                    <li>• El enlace a tu red social debe ser público y accesible</li>
+                </ul>
+            </div>
+
+            <!-- Enlace de Regreso -->
+            <div class="text-center mt-8">
+                <a href="index.html" 
+                   class="inline-flex items-center px-6 py-3 bg-stone-200 hover:bg-stone-300 text-stone-700 font-semibold rounded-full transition-all duration-200">
+                    ← Volver a la Comunidad
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal de Confirmación -->
+    <div id="success-modal" class="fixed inset-0 z-50 hidden bg-stone-900/50 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 text-center">
+            <div class="text-6xl mb-4">🎉</div>
+            <h3 class="text-2xl font-bold text-stone-800 mb-4">¡Registro Exitoso!</h3>
+            <p class="text-stone-600 mb-6">
+                Tu información ha sido enviada correctamente. Será revisada y aprobada pronto.
+            </p>
+            <button onclick="closeSuccessModal()" 
+                    class="bg-gradient-to-r from-[#968279] to-[#8d766c] text-white font-bold py-3 px-6 rounded-full hover:from-stone-600 hover:to-stone-700 transition-all duration-200">
+                Entendido
+            </button>
+        </div>
+    </div>
+
+    <script type="module" src="./assets/js/registro.js"></script>
+</body>
+</html> 

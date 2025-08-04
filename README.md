@@ -15,18 +15,21 @@ Una aplicación web que muestra la comunidad de mujeres emprendedoras de The Bos
 ```
 thebossboard/
 ├── index.html                 # Página principal
+├── registro.html              # Formulario de registro
 ├── assets/
 │   ├── css/
 │   │   └── styles.css        # Estilos personalizados
 │   ├── js/
 │   │   ├── app.js           # Archivo principal de la aplicación
-│   │   ├── modules/
-│   │   │   ├── DataManager.js      # Manejo de datos
-│   │   │   ├── CardBuilder.js      # Construcción de tarjetas
-│   │   │   ├── ModalManager.js     # Gestión del modal
-│   │   │   └── CommunityApp.js     # Aplicación principal
-│   │   └── data/
-│   │       └── community.json      # Datos de la comunidad
+│   │   ├── registro.js      # Manejo del formulario de registro
+│   │   └── modules/
+│   │       ├── DataManager.js      # Manejo de datos
+│   │       ├── CardBuilder.js      # Construcción de tarjetas
+│   │       ├── ModalManager.js     # Gestión del modal
+│   │       ├── CommunityApp.js     # Aplicación principal
+│   │       └── RegistrationManager.js # Gestión del registro
+│   ├── data/
+│   │   └── community.json      # Datos de la comunidad
 │   └── images/
 │       ├── logo/
 │       │   └── BossBoard-white.png # Logo de la aplicación
@@ -48,7 +51,8 @@ thebossboard/
 2. Abre `index.html` en tu navegador
 3. Explora la comunidad haciendo clic en las tarjetas
 4. Usa el modal para ver detalles completos de cada miembro
-5. **Test del filtro**: Abre `test-filter.html` para verificar la funcionalidad de autorización
+5. **Registro**: Haz clic en "¡Únete a la Comunidad!" para registrar nuevos miembros
+6. **Test del filtro**: Abre `test-filter.html` para verificar la funcionalidad de autorización
 
 ## 📝 Funcionalidades
 
@@ -73,6 +77,12 @@ thebossboard/
 - Miembros pendientes (`"autorizado": false`) no aparecen en la aplicación
 - Logging en consola con estadísticas de autorización
 
+### Formulario de Registro
+- Formulario completo para nuevos miembros en `registro.html`
+- Validación de campos obligatorios y formatos
+- Los nuevos registros se agregan con `"autorizado": false`
+- Instrucciones automáticas en consola para agregar al JSON
+
 ## 🎨 Personalización
 
 ### Colores
@@ -82,7 +92,7 @@ Los colores principales se pueden modificar en `assets/css/styles.css`:
 - Gradientes y efectos personalizables
 
 ### Datos
-Para agregar nuevos miembros, edita `assets/js/data/community.json`:
+Para agregar nuevos miembros, edita `assets/data/community.json`:
 ```json
 {
   "nombre": "Nombre Apellido",

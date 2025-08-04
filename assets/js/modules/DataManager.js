@@ -3,7 +3,7 @@ export class DataManager {
     static async loadData() {
         try {
             // Intentar cargar desde JSON primero
-            const response = await fetch('./assets/js/data/community.json');
+            const response = await fetch('./assets/data/community.json');
             if (response.ok) {
                 const allData = await response.json();
                 // Filtrar solo los miembros autorizados
