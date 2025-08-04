@@ -5,39 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TBB</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    animation: {
-                        'fade-in': 'fadeIn 0.3s ease-in-out',
-                        'slide-up': 'slideUp 0.3s ease-out',
-                        'scale-in': 'scaleIn 0.2s ease-out'
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' }
-                        },
-                        slideUp: {
-                            '0%': { transform: 'translateY(20px)', opacity: '0' },
-                            '100%': { transform: 'translateY(0)', opacity: '1' }
-                        },
-                        scaleIn: {
-                            '0%': { transform: 'scale(0.9)', opacity: '0' },
-                            '100%': { transform: 'scale(1)', opacity: '1' }
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body class="min-h-screen bg-gradient-to-br from-stone-300 to-stone-100 text-stone-800 font-sans antialiased">
     <!-- Header -->
     <header class="sbackdrop-blur-md border-b border-stone-500/20 py-12 bg-[#8d766c]">
         <div class="container mx-auto px-6 text-center">
-            <img class="h-40 inline" src="./assets/img/BossBoard-white.png" alt="">
+            <img class="h-40 inline" src="./assets/images/logo/BossBoard-white.png" alt="The Boss Board Logo">
             <p class="text-xl text-white font-bold animate-slide-up mt-4">
                 Conoce a las jefas increíbles que forman parte de nuestra comunidad
             </p>
@@ -121,6 +95,6 @@
         </div>
     </div>
 
-    <script type="module" src="script.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,95 @@
+/* Estilos personalizados para The Boss Board */
+
+/* Configuración de Tailwind */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Animaciones personalizadas */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { 
+        transform: translateY(20px); 
+        opacity: 0; 
+    }
+    100% { 
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+@keyframes scaleIn {
+    0% { 
+        transform: scale(0.9); 
+        opacity: 0; 
+    }
+    100% { 
+        transform: scale(1); 
+        opacity: 1; 
+    }
+}
+
+/* Clases de utilidad personalizadas */
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.2s ease-out;
+}
+
+/* Estilos para el modal */
+.modal-backdrop {
+    backdrop-filter: blur(4px);
+}
+
+/* Estilos para las tarjetas */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Estilos para el botón de cerrar modal */
+.close-button {
+    transition: all 0.2s ease;
+}
+
+.close-button:hover {
+    background-color: #d6d3d1;
+    color: #78716c;
+}
+
+/* Estilos para el botón social */
+.social-button {
+    transition: all 0.2s ease;
+}
+
+.social-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el loading spinner */
+.loading-spinner {
+    border: 4px solid #78716c;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 
