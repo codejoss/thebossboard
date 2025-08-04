@@ -80,6 +80,8 @@ thebossboard/
 ### Formulario de Registro
 - Formulario completo para nuevos miembros en `registro.html`
 - Validación de campos obligatorios y formatos
+- Subida de archivos de imagen con vista previa
+- Generación automática de nombres de archivo normalizados
 - Los nuevos registros se agregan con `"autorizado": false`
 - Instrucciones automáticas en consola para agregar al JSON
 
