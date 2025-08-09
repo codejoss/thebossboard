@@ -141,5 +141,16 @@
     "red_social": "https://www.instagram.com/andre_m.16",
     "mensaje": "No esperes a sentirte lista, hazlo aunque por dentro te estés muriendo del miedo",
     "foto": "./assets/profileimg/IMG_7734-Andrea-Montiel.jpeg"
+  },
+  {
+    "nombre": "Celeste",
+    "edad": 33,
+    "ciudad_pais": "Veracruz, México",
+    "profesion": "Diseñadora gráfica / Comunicóloga / Mamá",
+    "proposito_sueno": "Ayudar a emprendedor@s a dar forma visual a sus ideas con empatía, creatividad y escucha activa, creando marcas memorables que conecten desde su esencia y evolucionen con ellas. Al mismo tiempo, construir un emprendimiento que me permita disponer de mi tiempo para estar presente con mi hijo y mi familia, y vivir el diseño desde un lugar más humano y equilibrado.",
+    "motivacion": "Lo que me motivó a unirme a The Boss Room VIP el deseo de apoyar el proyecto de mi prima Andrea, porque sé todo el esfuerzo que hay detrás y me pareció una iniciativa valiosa. Con el tiempo, me fui enganchando con los temas, especialmente porque el marketing digital es un área que me interesa y siempre está en evolución. Agradezco mucho ser parte de este grupo y todo lo que he podido aprender. ¡Felicidades, Andrea, por crear este espacio tan útil y bien organizado!",
+    "red_social": "https://linktr.ee/ixmu.imagen",
+    "mensaje": "Hace 8 años, cuando mi hijo era solo un bebé, empecé mi emprendimiento en medio de una etapa muy difícil: recién separada, saliendo de una situación de violencia y con muchos miedos. Poco a poco, con terapia, lectura, mucho trabajo interior y sin renunciar a mis sueños, comencé a reconstruirme. Hoy miro atrás y veo todo lo que he logrado: vivir del diseño, formar una nueva familia, y lo más valioso, ver a mi hijo crecer sano, amado y feliz. Comparto esto con ustedes porque sé que muchas veces el camino se siente cuesta arriba, pero también sé que es posible transformar el dolor en propósito. Estoy agradecida por ser parte de The Boss Room VIP y optimista por seguir aprendiendo y conectando con más mujeres que creen, como yo, que podemos crecer, ayudar y construir una vida más amorosa y consciente para nosotras y para el mundo. 💛",
+    "foto": "./assets/profileimg/Celeste.jpeg"
   }
 ]
