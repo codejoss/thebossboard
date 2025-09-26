@@ -163,5 +163,16 @@
     "red_social": "https://www.instagram.com/soycaraguilera",
     "mensaje": "Empieza con lo que tienes, desde donde estás, y confía en que cada paso te va a dar la claridad y la fuerza que necesitas.",
     "foto": "./assets/profileimg/carmen-aguilera.jpeg"
+  },
+  {
+    "nombre": "Lorena Blum",
+    "edad": 46,
+    "ciudad_pais": "Dallas Texas",
+    "profesion": "Coach de transformation/ Manifestacion ",
+    "proposito_sueno": "Vivir de mi emprendimiento con el mismo nivel de vida que tengo hoy.",
+    "motivacion": "Recomendacion de Carmen Aguilera.",
+    "red_social": "https://www.instagram.com/lorenablumcoach",
+    "mensaje": "Nunca dejes de creer en ti.",
+    "foto": "./assets/profileimg/Lorena-Bdom.jpeg"
   }
 ]
