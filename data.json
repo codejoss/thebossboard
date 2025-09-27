@@ -174,5 +174,16 @@
     "red_social": "https://www.instagram.com/lorenablumcoach",
     "mensaje": "Nunca dejes de creer en ti.",
     "foto": "./assets/profileimg/Lorena-Bdom.jpeg"
+  },
+  {
+    "nombre": "Daniela Sañudo",
+    "edad": 45,
+    "ciudad_pais": "Monterrey, Nuevo León, México",
+    "profesion": "Coach Ejecutivo y Transformación",
+    "proposito_sueno": "Llejar a mujeres de alto rendimiento a sostener su éxito sin perderse a ellas mismas. Enfocada en salud mental con consultoría de negocios.",
+    "motivacion": "Ver lo feliz que están las personas que forman parte de esta hermosa comunidad.",
+    "red_social": "https://www.instagram.com/soydanielasanudo",
+    "mensaje": "En la vida hay infinitas posibilidades",
+    "foto": "./assets/profileimg/Dany-Sañudo.jpeg"
   }
 ]
