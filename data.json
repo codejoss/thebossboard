@@ -11,59 +11,26 @@
     "foto": "./assets/profileimg/andrea_cazarin.jpg"
   },
   {
-    "nombre": "Ana Karen González Romero",
-    "edad": 34,
-    "ciudad_pais": "Puebla, México",
-    "profesion": "Agente de seguros",
-    "proposito_sueno": "Construir un legado de protección, amor y conciencia financiera que transforme vidas empezando por la mía, la de mi hija y la de cada familia que confía en mí. Porque sé que una decisión hoy puede cambiar el destino de muchos mañana.",
-    "motivacion": "Porque creo en el poder de conectar desde lo real. Hoy más que nunca, lo digital me permite llevar mi mensaje a más mujeres y familias, con libertad y propósito. Pero lo que más valoro… es no hacerlo sola. Esta comunidad me inspira, me impulsa y me recuerda que siempre se puede crecer más, hacerlo mejor y creer más fuerte en mí.",
-    "red_social": "https://www.instagram.com/galez.seguros",
-    "mensaje": "Aquí encontré guía, motivación y una líder que no solo enseña, sino que acompaña. Y eso hace toda la diferencia.",
-    "foto": "./assets/profileimg/Ana-Karen-González.jpeg"
+    "nombre": "Pam",
+    "edad": 46,
+    "ciudad_pais": "Estado de México, México",
+    "profesion": "Network en el área de bienestar y salud",
+    "proposito_sueno": "Tener un negocio sustentable que me permita seguir trabajando desde casa, disponer de mi tiempo y horarios para poder estar presente con mis hijos y actividades personales",
+    "motivacion": "Aprender más sobre redes sociales y marca personal y poder conectar con más mujeres de diferentes nichos para conectar, apoyar y refrescar ideas y procesos.",
+    "red_social": "https://www.instagram.com/pam_pdr",
+    "mensaje": "No importa como lo hagas, lo importante es no quedarse en el intento.",
+    "foto": "./assets/profileimg/Pamela-Perez.jpeg"
   },
   {
-    "nombre": "Carmen Quezada",
-    "edad": 34,
-    "ciudad_pais": "Ciudad de México",
-    "profesion": "Networker y Líder de equipo",
-    "proposito_sueno": "Inspirar a mujeres a construir su libertad financiera",
-    "motivacion": "El acompañamiento",
-    "red_social": "https://www.instagram.com/carmen_quezada11",
-    "mensaje": "Primero créelo para crearlo! Todo es posible.",
-    "foto": "./assets/profileimg/Carmen-Quezada.jpeg"
-  },
-  {
-    "nombre": "angelica paredes sanchez",
-    "edad": 39,
-    "ciudad_pais": "Naucalpan, Edo. de México",
-    "profesion": "Diseñadora editorial / Emprendedora",
-    "proposito_sueno": "Mi sueño es poder tener esa libertad que te permite tener un trabajo remoto, con estabilidad financiera, yo elegir mis tiempos, horarios, poder viajar y no posponer más mis sueños. quiero crear una comunidad con más mujeres que las inspire a no quedarse en un lugar donde no son felices, donde su trabajo no es reconocido a que ellas trabajen por cumplir sus metas. Sueño con tener un equipo fuerte, crear comuidad, un equipo que accione por si solo, que no se tenga que jalar, un equipo que inspire, un equipo que se destaque, un equipo en el que las personas digan, yo quiero pertenecer y que vean que tomando pequeñas decisiones fuera del miedo se crean grandes cambios y se consiguen sueños.",
-    "motivacion": "Tener guía de una mujer que se ve que es clara, directa y que acciona y en la que puedo confiar para que me de los pasos",
-    "red_social": "https://www.instagram.com/angiecon.ie/",
-    "mensaje": "Este es el primer paso para algo más grande, estás aquí porque estás accionando.",
-    "foto": "./assets/profileimg/Angelica_Paredes.jpeg"
-  },
-  {
-    "nombre": "Carmen ladelosseguros",
-    "edad": "-",
-    "ciudad_pais": "Puebla, México",
-    "profesion": "Agente de seguros",
-    "proposito_sueno": "Acompañar a personas que desean proteger su vida, salud y futuro con empatía, claridad y estrategia. Porque asegurar es un acto de amor y visión.",
-    "motivacion": "La energía de Andrea",
-    "red_social": "https://linktr.ee/carmenmtzas",
-    "mensaje": "Que no esperen para empezar porque el tiempo pasa muy rápido",
-    "foto": "./assets/profileimg/Carmen-Martinez.jpeg"
-  },
-  {
-    "nombre": "Michelle Caballero Carranco",
-    "edad": 27,
-    "ciudad_pais": "Tijuana, Baja California, México ",
-    "profesion": "Ing. Industrial / Creadora de contenido",
-    "proposito_sueno": "Mi sueño es crear una comunidad en redes y trabajar en redes y vivir de ello.",
-    "motivacion": "A no estar sola, compartir y crear con otras mujeres y crecer con ellas.",
-    "red_social": "https://www.tiktok.com/@michelcarranco",
-    "mensaje": "Te va a servir mucho esta nueva experiencia. Te ayudará no solo a crecer en redes sociales sino como persona, ya que agarraras más confianza para hablar en cámara 📷 ",
-    "foto": "./assets/profileimg/Michelle_Caballero_Carranco.jpg"
+    "nombre": "Andrea Montiel",
+    "edad": 38,
+    "ciudad_pais": "Texcoco, Edo. de México, México",
+    "profesion": "Abogada / Emprendedora Farmasi",
+    "proposito_sueno": "Sentirme útil, ser una mamá presente, sentirme feliz con lo que hago y ayudar a mujeres a generer ingresos desde casa sin tener que elegir o descuidar a los que más amas",
+    "motivacion": "Que son una comunidad, que hay guía, estrategia y seguimiento.",
+    "red_social": "https://www.instagram.com/andre_m.16",
+    "mensaje": "No esperes a sentirte lista, hazlo aunque por dentro te estés muriendo del miedo",
+    "foto": "./assets/profileimg/IMG_7734-Andrea-Montiel.jpeg"
   },
   {
     "nombre": "Pau Gatti",
@@ -77,37 +44,48 @@
     "foto": "./assets/profileimg/Ana_Paula_Gatti.jpeg"
   },
   {
-    "nombre": "Veni González",
-    "edad": 30,
-    "ciudad_pais": "Ciudad de México",
-    "profesion": "Abogada / Emprendedora Farmasi / Nespresso",
-    "proposito_sueno": "Llegar formar un equipo de mujeres empoderadas que desean ser dueñas de su tiempo su dinero y su estabilidad mental",
-    "motivacion": "El aprender a  usar mis redes sociales para conectar con la gente",
-    "red_social": "https://www.instagram.com/veni.glez",
-    "mensaje": "Confía en ti, esto es una gran oportunidad para ti, hazlo con el corazon.",
-    "foto": "./assets/profileimg/Veronica-Gonzalez.jpeg"
-  },
-  {
-    "nombre": "Pam",
-    "edad": 46,
-    "ciudad_pais": "Estado de México",
-    "profesion": "Network en el área de bienestar y salud",
-    "proposito_sueno": "Tener un negocio sustentable que me permita seguir trabajando desde casa, disponer de mi tiempo y horarios para poder estar presente con mis hijos y actividades personales",
-    "motivacion": "Aprender más sobre redes sociales y marca personal y poder conectar con más mujeres de diferentes nichos para conectar, apoyar y refrescar ideas y procesos.",
-    "red_social": "https://www.instagram.com/pam_pdr",
-    "mensaje": "No importa como lo hagas, lo importante es no quedarse en el intento.",
-    "foto": "./assets/profileimg/Pamela-Perez.jpeg"
-  },
-  {
-    "nombre": "Nohemi Moro",
-    "edad": 30,
+    "nombre": "Viridiana Rull",
+    "edad": 33,
     "ciudad_pais": "Puebla, México",
-    "profesion": "Contadora / Agente de viajes / Creadora de contenido",
-    "proposito_sueno": "Enseñarle a las personas como pueden disfrutar viajar con mis tips, asi como yo llevarlos a conocer destinos",
-    "motivacion": "Mejorar en lo que hago.",
-    "red_social": "https://www.instagram.com/lienzo_viajero",
+    "profesion": "Emprendedora en Atomy",
+    "proposito_sueno": "Poder conectar con más mujeres y personas de otros países que les interese consumir inteligentemente.",
+    "motivacion": "El poder aprender a conectar con las personas y poder crear contenido en mis redes.",
+    "red_social": "https://www.instagram.com/viryrull",
     "mensaje": "Mucha constancia y paciencia que si se logra.",
-    "foto": "./assets/profileimg/Nohemi-Moro.jpeg"
+    "foto": "./assets/profileimg/Viridiana-Rull.jpeg"
+  },
+  {
+    "nombre": "Angelica Paredes Sanchez",
+    "edad": 39,
+    "ciudad_pais": "Naucalpan, Edo. de México",
+    "profesion": "Diseñadora editorial / Emprendedora",
+    "proposito_sueno": "Mi sueño es poder tener esa libertad que te permite tener un trabajo remoto, con estabilidad financiera, yo elegir mis tiempos, horarios, poder viajar y no posponer más mis sueños. quiero crear una comunidad con más mujeres que las inspire a no quedarse en un lugar donde no son felices, donde su trabajo no es reconocido a que ellas trabajen por cumplir sus metas. Sueño con tener un equipo fuerte, crear comuidad, un equipo que accione por si solo, que no se tenga que jalar, un equipo que inspire, un equipo que se destaque, un equipo en el que las personas digan, yo quiero pertenecer y que vean que tomando pequeñas decisiones fuera del miedo se crean grandes cambios y se consiguen sueños.",
+    "motivacion": "Tener guía de una mujer que se ve que es clara, directa y que acciona y en la que puedo confiar para que me de los pasos",
+    "red_social": "https://www.instagram.com/angiecon.ie/",
+    "mensaje": "Este es el primer paso para algo más grande, estás aquí porque estás accionando.",
+    "foto": "./assets/profileimg/Angelica_Paredes.jpeg"
+  },
+  {
+    "nombre": "Ana Karen González Romero",
+    "edad": 34,
+    "ciudad_pais": "Puebla, México",
+    "profesion": "Agente de seguros",
+    "proposito_sueno": "Construir un legado de protección, amor y conciencia financiera que transforme vidas empezando por la mía, la de mi hija y la de cada familia que confía en mí. Porque sé que una decisión hoy puede cambiar el destino de muchos mañana.",
+    "motivacion": "Porque creo en el poder de conectar desde lo real. Hoy más que nunca, lo digital me permite llevar mi mensaje a más mujeres y familias, con libertad y propósito. Pero lo que más valoro… es no hacerlo sola. Esta comunidad me inspira, me impulsa y me recuerda que siempre se puede crecer más, hacerlo mejor y creer más fuerte en mí.",
+    "red_social": "https://www.instagram.com/galez.seguros",
+    "mensaje": "Aquí encontré guía, motivación y una líder que no solo enseña, sino que acompaña. Y eso hace toda la diferencia.",
+    "foto": "./assets/profileimg/Ana-Karen-González.jpeg"
+  },
+  {
+    "nombre": "Carmen Quezada",
+    "edad": 34,
+    "ciudad_pais": "Ciudad de México, México",
+    "profesion": "Networker y Líder de equipo",
+    "proposito_sueno": "Inspirar a mujeres a construir su libertad financiera",
+    "motivacion": "El acompañamiento",
+    "red_social": "https://www.instagram.com/carmen_quezada11",
+    "mensaje": "Primero créelo para crearlo! Todo es posible.",
+    "foto": "./assets/profileimg/Carmen-Quezada.jpeg"
   },
   {
     "nombre": "Elv Hernández",
@@ -121,26 +99,26 @@
     "foto": "./assets/profileimg/elvira_hernandez.jpeg"
   },
   {
-    "nombre": "Viridiana Rull",
-    "edad": 33,
+    "nombre": "Carmen ladelosseguros",
+    "edad": "-",
     "ciudad_pais": "Puebla, México",
-    "profesion": "Trabajo en Atomy",
-    "proposito_sueno": "Poder conectar con más mujeres y personas de otros países que les interese consumir inteligentemente.",
-    "motivacion": "El poder aprender a conectar con las personas y poder crear contenido en mis redes.",
-    "red_social": "https://www.instagram.com/viryrull",
-    "mensaje": "Mucha constancia y paciencia que si se logra.",
-    "foto": "./assets/profileimg/Viridiana-Rull.jpeg"
+    "profesion": "Agente de seguros",
+    "proposito_sueno": "Acompañar a personas que desean proteger su vida, salud y futuro con empatía, claridad y estrategia. Porque asegurar es un acto de amor y visión.",
+    "motivacion": "La energía de Andrea",
+    "red_social": "https://linktr.ee/carmenmtzas",
+    "mensaje": "Que no esperen para empezar porque el tiempo pasa muy rápido",
+    "foto": "./assets/profileimg/Carmen-Martinez.jpeg"
   },
   {
-    "nombre": "Andrea Montiel",
-    "edad": 38,
-    "ciudad_pais": "Texcoco, Edo. de México",
-    "profesion": "Abogada / Emprendedora Farmasi",
-    "proposito_sueno": "Sentirme útil, ser una mamá presente, sentirme feliz con lo que hago y ayudar a mujeres a generer ingresos desde casa sin tener que elegir o descuidar a los que más amas",
-    "motivacion": "Que son una comunidad, que hay guía, estrategia y seguimiento.",
-    "red_social": "https://www.instagram.com/andre_m.16",
-    "mensaje": "No esperes a sentirte lista, hazlo aunque por dentro te estés muriendo del miedo",
-    "foto": "./assets/profileimg/IMG_7734-Andrea-Montiel.jpeg"
+    "nombre": "Car Aguilera",
+    "edad": 37,
+    "ciudad_pais": "Toluca, Estado de México, México",
+    "profesion": "Faciltadora de Quantum Leap Training (QLT)",
+    "proposito_sueno": "Mi propósito es que cada mujer recuerde que ya es suficiente, que su valor no depende de nada externo. Mi sueño es ver a más mujeres brillando en sus negocios, confiadas en su poder y construyendo desde la certeza de que sí pueden.",
+    "motivacion": "Me motivaste tu como líder Andy, eres muy inspiradora y me identifique contigo y con las chicas de tu comunidad, somos emprendedoras que vamos iniciando y que nos vamos acompañando en el proceso, la verdad con el tiempo que llevo en el emprendimiento a veces es un proceso solitario y tener una tribu que pueda acompañar hace más agradable y disfrutable el camino. Gracias por crear esta iniciativa, estoy feliz de ser parte.",
+    "red_social": "https://www.instagram.com/soycaraguilera",
+    "mensaje": "Empieza con lo que tienes, desde donde estás, y confía en que cada paso te va a dar la claridad y la fuerza que necesitas.",
+    "foto": "./assets/profileimg/carmen-aguilera.jpeg"
   },
   {
     "nombre": "Celeste",
@@ -154,20 +132,42 @@
     "foto": "./assets/profileimg/Celeste.jpeg"
   },
   {
-    "nombre": "Car Aguilera",
-    "edad": 37,
-    "ciudad_pais": "Toluca, Estado de México",
-    "profesion": "Faciltadora de Quantum Leap Training (QLT)",
-    "proposito_sueno": "Mi propósito es que cada mujer recuerde que ya es suficiente, que su valor no depende de nada externo. Mi sueño es ver a más mujeres brillando en sus negocios, confiadas en su poder y construyendo desde la certeza de que sí pueden.",
-    "motivacion": "Me motivaste tu como líder Andy, eres muy inspiradora y me identifique contigo y con las chicas de tu comunidad, somos emprendedoras que vamos iniciando y que nos vamos acompañando en el proceso, la verdad con el tiempo que llevo en el emprendimiento a veces es un proceso solitario y tener una tribu que pueda acompañar hace más agradable y disfrutable el camino. Gracias por crear esta iniciativa, estoy feliz de ser parte.",
-    "red_social": "https://www.instagram.com/soycaraguilera",
-    "mensaje": "Empieza con lo que tienes, desde donde estás, y confía en que cada paso te va a dar la claridad y la fuerza que necesitas.",
-    "foto": "./assets/profileimg/carmen-aguilera.jpeg"
+    "nombre": "Michelle Caballero Carranco",
+    "edad": 27,
+    "ciudad_pais": "Tijuana, Baja California, México ",
+    "profesion": "Ing. Industrial / Creadora de contenido",
+    "proposito_sueno": "Mi sueño es crear una comunidad en redes y trabajar en redes y vivir de ello.",
+    "motivacion": "A no estar sola, compartir y crear con otras mujeres y crecer con ellas.",
+    "red_social": "https://www.tiktok.com/@michelcarranco",
+    "mensaje": "Te va a servir mucho esta nueva experiencia. Te ayudará no solo a crecer en redes sociales sino como persona, ya que agarraras más confianza para hablar en cámara 📷 ",
+    "foto": "./assets/profileimg/Michelle_Caballero_Carranco.jpg"
+  },
+  {
+    "nombre": "Veni González",
+    "edad": 30,
+    "ciudad_pais": "Ciudad de México, México",
+    "profesion": "Abogada / Emprendedora Farmasi / Nespresso",
+    "proposito_sueno": "Llegar formar un equipo de mujeres empoderadas que desean ser dueñas de su tiempo su dinero y su estabilidad mental",
+    "motivacion": "El aprender a  usar mis redes sociales para conectar con la gente",
+    "red_social": "https://www.instagram.com/veni.glez",
+    "mensaje": "Confía en ti, esto es una gran oportunidad para ti, hazlo con el corazon.",
+    "foto": "./assets/profileimg/Veronica-Gonzalez.jpeg"
+  },
+  {
+    "nombre": "Nohemi Moro",
+    "edad": 30,
+    "ciudad_pais": "Puebla, México",
+    "profesion": "Contadora / Agente de viajes / Creadora de contenido",
+    "proposito_sueno": "Enseñarle a las personas como pueden disfrutar viajar con mis tips, asi como yo llevarlos a conocer destinos",
+    "motivacion": "Mejorar en lo que hago.",
+    "red_social": "https://www.instagram.com/lienzo_viajero",
+    "mensaje": "Mucha constancia y paciencia que si se logra.",
+    "foto": "./assets/profileimg/Nohemi-Moro.jpeg"
   },
   {
     "nombre": "Lorena Blum",
     "edad": 46,
-    "ciudad_pais": "Dallas Texas",
+    "ciudad_pais": "Dallas Texas, EUA",
     "profesion": "Coach de transformation/ Manifestacion ",
     "proposito_sueno": "Vivir de mi emprendimiento con el mismo nivel de vida que tengo hoy.",
     "motivacion": "Recomendacion de Carmen Aguilera.",
@@ -185,6 +185,17 @@
     "red_social": "https://www.instagram.com/soydanielasanudo",
     "mensaje": "En la vida hay infinitas posibilidades",
     "foto": "./assets/profileimg/Dany-Sañudo.jpeg"
+  },
+  {
+    "nombre": "Norma Azarel Gómez Arias",
+    "edad": 45,
+    "ciudad_pais": "Puebla, México",
+    "profesion": "Agente de seguros",
+    "proposito_sueno": "Crecer mi negocio y posicionarme como una reconocida agente de seguros.",
+    "motivacion": "Creo que ninguna mujer es tan segura de si misma para salir adelante por ella misma, siempre necesitamos una red de apoyo que nos ayude a creer en nosotras mismas y mi idea es esa ayudarme por medio de la comunidad a vencer mis miedos e ideas limitantes.",
+    "red_social": "https://www.instagram.com/gana_consultoria_patrimonial",
+    "mensaje": "No hay nada peor que no intentarlo y ver hasta donde podemos ser capaces de llegar, entonces el mensaje es atreverse.",
+    "foto": "./assets/profileimg/Norma-Azarel.jpeg"
   },
   {
     "nombre": "Yamel Marun Mejía",
