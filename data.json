@@ -180,10 +180,21 @@
     "edad": 45,
     "ciudad_pais": "Monterrey, Nuevo León, México",
     "profesion": "Coach Ejecutivo y Transformación",
-    "proposito_sueno": "Llejar a mujeres de alto rendimiento a sostener su éxito sin perderse a ellas mismas. Enfocada en salud mental con consultoría de negocios.",
+    "proposito_sueno": "Llevar a mujeres de alto rendimiento a sostener su éxito sin perderse a ellas mismas. Enfocada en salud mental con consultoría de negocios.",
     "motivacion": "Ver lo feliz que están las personas que forman parte de esta hermosa comunidad.",
     "red_social": "https://www.instagram.com/soydanielasanudo",
     "mensaje": "En la vida hay infinitas posibilidades",
     "foto": "./assets/profileimg/Dany-Sañudo.jpeg"
+  },
+  {
+    "nombre": "Yamel Marun Mejía",
+    "edad": 45,
+    "ciudad_pais": "México",
+    "profesion": "Aprendiz digital",
+    "proposito_sueno": "Poner tener mi propio emprendimiento.",
+    "motivacion": "Lo que me comentó Carmen.",
+    "red_social": "https://www.instagram.com/tribuperimenopausia",
+    "mensaje": "Cree en ti",
+    "foto": "./assets/profileimg/Yamel-Marun.jpeg"
   }
 ]
