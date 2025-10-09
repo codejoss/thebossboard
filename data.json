@@ -207,5 +207,16 @@
     "red_social": "https://www.instagram.com/tribuperimenopausia",
     "mensaje": "Cree en ti",
     "foto": "./assets/profileimg/Yamel-Marun.jpeg"
+  },
+  {
+    "nombre": "Karla González",
+    "edad": 27,
+    "ciudad_pais": "Estado de México, México",
+    "profesion": "Emprendedora y ama de casa",
+    "proposito_sueno": "Tener independencia tanto personal como Económica, recuperar la confianza en mi misma.",
+    "motivacion": "Pertenecer a una comunidad, donde haya motivación, apoyo y estrategias para dar ese paso y lograr mis objetivos.",
+    "red_social": "https://www.instagram.com/karlabgonz",
+    "mensaje": "Da ese primer paso, créeme ese paso vale mucho. Eres fuerte, valiente y lo vales 🥰",
+    "foto": "./assets/profileimg/Karla-Gonzalez.jpeg"
   }
 ]
