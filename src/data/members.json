@@ -8,7 +8,7 @@
     "motivation": "Ver a más mujeres apostando por ellas mismas, creando libertad con lo que aman y demostrando que sí pueden. Me mueve saber que no tienen que hacerlo solas, y que yo puedo ser parte de ese impulso.",
     "socialNetwork": "https://www.instagram.com/_andreacazarin",
     "message": "Que no están solas. Que este espacio es para crecer, equivocarnos, levantarnos y lograrlo juntas. Aquí hay apoyo real, impulso y herramientas para que construyas tu camino con propósito y poder.",
-    "profileImage": "./assets/profileimg/andrea_cazarin.jpg"
+    "profileImage": "/src/assets/profileimg/andrea_cazarin.jpg"
   },
   {
     "name": "Pam",
@@ -19,7 +19,7 @@
     "motivation": "Aprender más sobre redes sociales y marca personal y poder conectar con más mujeres de diferentes nichos para conectar, apoyar y refrescar ideas y procesos.",
     "socialNetwork": "https://www.instagram.com/pam_pdr",
     "message": "No importa como lo hagas, lo importante es no quedarse en el intento.",
-    "profileImage": "./assets/profileimg/Pamela-Perez.jpeg"
+    "profileImage": "/src/assets/profileimg/Pamela-Perez.jpeg"
   },
   {
     "name": "Car Aguilera",
@@ -30,7 +30,7 @@
     "motivation": "Me motivaste tu como líder Andy, eres muy inspiradora y me identifique contigo y con las chicas de tu comunidad, somos emprendedoras que vamos iniciando y que nos vamos acompañando en el proceso, la verdad con el tiempo que llevo en el emprendimiento a veces es un proceso solitario y tener una tribu que pueda acompañar hace más agradable y disfrutable el camino. Gracias por crear esta iniciativa, estoy feliz de ser parte.",
     "socialNetwork": "https://www.instagram.com/soycaraguilera",
     "message": "Empieza con lo que tienes, desde donde estás, y confía en que cada paso te va a dar la claridad y la fuerza que necesitas.",
-    "profileImage": "./assets/profileimg/carmen-aguilera.jpeg"
+    "profileImage": "/src/assets/profileimg/carmen-aguilera.jpeg"
   },
   {
     "name": "Andrea Montiel",
@@ -41,7 +41,7 @@
     "motivation": "Que son una comunidad, que hay guía, estrategia y seguimiento.",
     "socialNetwork": "https://www.instagram.com/andre_m.16",
     "message": "No esperes a sentirte lista, hazlo aunque por dentro te estés muriendo del miedo",
-    "profileImage": "./assets/profileimg/IMG_7734-Andrea-Montiel.jpeg"
+    "profileImage": "/src/assets/profileimg/IMG_7734-Andrea-Montiel.jpeg"
   },
   {
     "name": "Karla González",
@@ -52,7 +52,7 @@
     "motivation": "Pertenecer a una comunidad, donde haya motivación, apoyo y estrategias para dar ese paso y lograr mis objetivos.",
     "socialNetwork": "https://www.instagram.com/karlabgonz",
     "message": "Da ese primer paso, créeme ese paso vale mucho. Eres fuerte, valiente y lo vales 🥰",
-    "profileImage": "./assets/profileimg/Karla-Gonzalez.jpeg"
+    "profileImage": "/src/assets/profileimg/Karla-Gonzalez.jpeg"
   },
   {
     "name": "Viridiana Rull",
@@ -63,7 +63,7 @@
     "motivation": "El poder aprender a conectar con las personas y poder crear contenido en mis redes.",
     "socialNetwork": "https://www.instagram.com/viryrull",
     "message": "Mucha constancia y paciencia que si se logra.",
-    "profileImage": "./assets/profileimg/Viridiana-Rull.jpeg"
+    "profileImage": "/src/assets/profileimg/Viridiana-Rull.jpeg"
   },
   {
     "name": "Pau Gatti",
@@ -74,7 +74,7 @@
     "motivation": "Estoy emprendiendo para construir una vida en la que soy libre, plena y feliz. Quiero tener independencia profesional y económica, hacer lo que amo cada día y demostrarme que sí soy capaz de lograrlo. Pero con un poco de ayuda y una comunidad que apoye, sin lugar a dudas, hará más lindo el camino. Lo hago para vivir sin miedo, para crecer incluso cuando tiemblo, para disfrutar de mis logros y del camino. Cada paso fuera de mi zona de confort es un paso más hacia esa versión de mí que se atreve, que sueña, y que cumple.",
     "socialNetwork": "https://linktr.ee/paugatti.travelagent?utm_source=linktree_profile_share&ltsid=a0e3e258-8e62-4cdf-bcc4-a50f72c9b24c",
     "message": "Emprender no es fácil, a veces estás súper emocionada pasionada con lo que haces y a veces te llega el autosabotaje y creo que es normal. Pero hay que recordar siempre que lo importante está en confiar en que tus metas se cumplirán porque estás en acción constante y alineada con tu propósito",
-    "profileImage": "./assets/profileimg/Ana_Paula_Gatti.jpeg"
+    "profileImage": "/src/assets/profileimg/Ana_Paula_Gatti.jpeg"
   },
   {
     "name": "Angelica Paredes Sanchez",
@@ -85,7 +85,7 @@
     "motivation": "Tener guía de una mujer que se ve que es clara, directa y que acciona y en la que puedo confiar para que me de los pasos",
     "socialNetwork": "https://www.instagram.com/angiecon.ie/",
     "message": "Este es el primer paso para algo más grande, estás aquí porque estás accionando.",
-    "profileImage": "./assets/profileimg/Angelica_Paredes.jpeg"
+    "profileImage": "/src/assets/profileimg/Angelica_Paredes.jpeg"
   },
   {
     "name": "Ana Karen González Romero",
@@ -96,7 +96,7 @@
     "motivation": "Porque creo en el poder de conectar desde lo real. Hoy más que nunca, lo digital me permite llevar mi mensaje a más mujeres y familias, con libertad y propósito. Pero lo que más valoro… es no hacerlo sola. Esta comunidad me inspira, me impulsa y me recuerda que siempre se puede crecer más, hacerlo mejor y creer más fuerte en mí.",
     "socialNetwork": "https://www.instagram.com/galez.seguros",
     "message": "Aquí encontré guía, motivación y una líder que no solo enseña, sino que acompaña. Y eso hace toda la diferencia.",
-    "profileImage": "./assets/profileimg/Ana-Karen-González.jpeg"
+    "profileImage": "/src/assets/profileimg/Ana-Karen-González.jpeg"
   },
   {
     "name": "Elv Hernández",
@@ -107,7 +107,7 @@
     "motivation": "Las publicaciones de Andrea",
     "socialNetwork": "https://www.instagram.com/elv_mujer_libre",
     "message": "Todas podemos !!!",
-    "profileImage": "./assets/profileimg/elvira_hernandez.jpeg"
+    "profileImage": "/src/assets/profileimg/elvira_hernandez.jpeg"
   },
   {
     "name": "Celeste",
@@ -118,7 +118,7 @@
     "motivation": "Lo que me motivó a unirme a The Boss Room VIP el deseo de apoyar el proyecto de mi prima Andrea, porque sé todo el esfuerzo que hay detrás y me pareció una iniciativa valiosa. Con el tiempo, me fui enganchando con los temas, especialmente porque el marketing digital es un área que me interesa y siempre está en evolución. Agradezco mucho ser parte de este grupo y todo lo que he podido aprender. ¡Felicidades, Andrea, por crear este espacio tan útil y bien organizado!",
     "socialNetwork": "https://linktr.ee/ixmu.imagen",
     "message": "Hace 8 años, cuando mi hijo era solo un bebé, empecé mi emprendimiento en medio de una etapa muy difícil: recién separada, saliendo de una situación de violencia y con muchos miedos. Poco a poco, con terapia, lectura, mucho trabajo interior y sin renunciar a mis sueños, comencé a reconstruirme. Hoy miro atrás y veo todo lo que he logrado: vivir del diseño, formar una nueva familia, y lo más valioso, ver a mi hijo crecer sano, amado y feliz. Comparto esto con ustedes porque sé que muchas veces el camino se siente cuesta arriba, pero también sé que es posible transformar el dolor en propósito. Estoy agradecida por ser parte de The Boss Room VIP y optimista por seguir aprendiendo y conectando con más mujeres que creen, como yo, que podemos crecer, ayudar y construir una vida más amorosa y consciente para nosotras y para el mundo. 💛",
-    "profileImage": "./assets/profileimg/Celeste.jpeg"
+    "profileImage": "/src/assets/profileimg/Celeste.jpeg"
   },
   {
     "name": "Michelle Caballero Carranco",
@@ -129,7 +129,7 @@
     "motivation": "A no estar sola, compartir y crear con otras mujeres y crecer con ellas.",
     "socialNetwork": "https://www.tiktok.com/@michelcarranco",
     "message": "Te va a servir mucho esta nueva experiencia. Te ayudará no solo a crecer en redes sociales sino como persona, ya que agarraras más confianza para hablar en cámara 📷 ",
-    "profileImage": "./assets/profileimg/Michelle_Caballero_Carranco.jpg"
+    "profileImage": "/src/assets/profileimg/Michelle_Caballero_Carranco.jpg"
   },
   {
     "name": "Kira Ivonne Robles Sánchez",
@@ -140,7 +140,7 @@
     "motivation": "Vi el contenido de Andrea y como ayudaba a más mujeres.",
     "socialNetwork": "https://www.instagram.com/kiraivonne.robles",
     "message": "No te desesperes, la constancia si da resultados",
-    "profileImage": "./assets/profileimg/Ivonne RS-2.png"
+    "profileImage": "/src/assets/profileimg/Ivonne RS-2.png"
   },
   {
     "name": "Carmen Quezada",
@@ -151,7 +151,7 @@
     "motivation": "El acompañamiento",
     "socialNetwork": "https://www.instagram.com/carmen_quezada11",
     "message": "Primero créelo para crearlo! Todo es posible.",
-    "profileImage": "./assets/profileimg/Carmen-Quezada.jpeg"
+    "profileImage": "/src/assets/profileimg/Carmen-Quezada.jpeg"
   },
   {
     "name": "Carmen ladelosseguros",
@@ -162,7 +162,7 @@
     "motivation": "La energía de Andrea",
     "socialNetwork": "https://linktr.ee/carmenmtzas",
     "message": "Que no esperen para empezar porque el tiempo pasa muy rápido",
-    "profileImage": "./assets/profileimg/Carmen-Martinez.jpeg"
+    "profileImage": "/src/assets/profileimg/Carmen-Martinez.jpeg"
   },
   {
     "name": "Yamel Marun Mejía",
@@ -173,7 +173,7 @@
     "motivation": "Lo que me comentó Carmen.",
     "socialNetwork": "https://www.instagram.com/tribuperimenopausia",
     "message": "Cree en ti",
-    "profileImage": "./assets/profileimg/Yamel-Marun.jpeg"
+    "profileImage": "/src/assets/profileimg/Yamel-Marun.jpeg"
   },
   {
     "name": "Daniela Sañudo",
@@ -184,7 +184,7 @@
     "motivation": "Ver lo feliz que están las personas que forman parte de esta hermosa comunidad.",
     "socialNetwork": "https://www.instagram.com/soydanielasanudo",
     "message": "En la vida hay infinitas posibilidades",
-    "profileImage": "./assets/profileimg/Dany-Sañudo.jpeg"
+    "profileImage": "/src/assets/profileimg/Dany-Sañudo.jpeg"
   },
   {
     "name": "Lorena Blum",
@@ -195,7 +195,7 @@
     "motivation": "Recomendacion de Carmen Aguilera.",
     "socialNetwork": "https://www.instagram.com/lorenablumcoach",
     "message": "Nunca dejes de creer en ti.",
-    "profileImage": "./assets/profileimg/Lorena-Bdom.jpeg"
+    "profileImage": "/src/assets/profileimg/Lorena-Bdom.jpeg"
   },
   {
     "name": "Nohemi Moro",
@@ -206,7 +206,7 @@
     "motivation": "Mejorar en lo que hago.",
     "socialNetwork": "https://www.instagram.com/lienzo_viajero",
     "message": "Mucha constancia y paciencia que si se logra.",
-    "profileImage": "./assets/profileimg/Nohemi-Moro.jpeg"
+    "profileImage": "/src/assets/profileimg/Nohemi-Moro.jpeg"
   },
   {
     "name": "Veni González",
@@ -217,7 +217,7 @@
     "motivation": "El aprender a  usar mis redes sociales para conectar con la gente",
     "socialNetwork": "https://www.instagram.com/veni.glez",
     "message": "Confía en ti, esto es una gran oportunidad para ti, hazlo con el corazon.",
-    "profileImage": "./assets/profileimg/Veronica-Gonzalez.jpeg"
+    "profileImage": "/src/assets/profileimg/Veronica-Gonzalez.jpeg"
   },
   {
     "name": "Norma Azarel Gómez Arias",
@@ -228,6 +228,6 @@
     "motivation": "Creo que ninguna mujer es tan segura de si misma para salir adelante por ella misma, siempre necesitamos una red de apoyo que nos ayude a creer en nosotras mismas y mi idea es esa ayudarme por medio de la comunidad a vencer mis miedos e ideas limitantes.",
     "socialNetwork": "https://www.instagram.com/gana_consultoria_patrimonial",
     "message": "No hay nada peor que no intentarlo y ver hasta donde podemos ser capaces de llegar, entonces el mensaje es atreverse.",
-    "profileImage": "./assets/profileimg/Norma-Azarel.jpeg"
+    "profileImage": "/src/assets/profileimg/Norma-Azarel.jpeg"
   }
 ]

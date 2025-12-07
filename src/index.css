@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bossDark: #8d766c;
+  --color-bossMedium: #a99993;
+  --color-bossLight: #efddd4;
+  --color-bossPinkDark: #dbaab3;
+  --color-bossPink: #ffb1c0;
+  --color-bossPinkLight: #fde7e9;
+  --color-bossGrayDark: #bcbdc2;
+  --color-bossGrayLight: #e8e8e8;
+}
