@@ -24,7 +24,7 @@ export const Cardsgrid = () => {
 
   useEffect(() => {
     // import all images from src/assets/profileimg and get their built URLs
-    const images = import.meta.glob('/src/assets/profileimg/*', { eager: true, as: 'url' }) as Record<string, string>;
+    const images = import.meta.glob('/src/assets/profileimg/*', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
 
     // Map members data and replace profileImage path with bundled URL if available
     const mapped = (membersData as Person[]).map((p) => {

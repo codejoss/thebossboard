@@ -7,9 +7,12 @@ const Home = () => {
   return (
     <MainLayout>
       <Banner>
-        <ButtonBossRoomVIP />
+        <ButtonBossRoomVIP textButton="¡Quiero Entrar!" className="mt-10" />
       </Banner>
       <Cardsgrid />
+      <Banner>
+        <ButtonBossRoomVIP textButton="Unirme a la comunidad" className="mb-10" />
+      </Banner>
     </MainLayout>
   );
 };

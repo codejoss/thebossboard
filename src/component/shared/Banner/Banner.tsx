@@ -1,9 +1,14 @@
 interface BannerProps {
   children: React.ReactElement;
+  className?: string;
 }
 
-export function Banner({ children }: BannerProps) {
+export function Banner({
+  className = "",
+  children }: BannerProps) {
   return (
-    <div className="mt-10 flex items-center justify-center">{children}</div>
+    <div className={`flex items-center justify-center ${className}`}>
+      {children}
+    </div>
   );
 }
