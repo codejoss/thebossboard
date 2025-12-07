@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows,node,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,windows,node,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,node,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,node,react
 
 ### Linux ###
 *~
@@ -189,24 +189,18 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+### react ###
+.DS_*
+**/*.backup.*
+**/*.back.*
 
-# Local History for Visual Studio Code
-.history/
+node_modules
 
-# Built Visual Studio Code Extensions
-*.vsix
+*.sublime*
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-.ionide
+psd
+thumb
+sketch
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -234,4 +228,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,node,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,node,react
