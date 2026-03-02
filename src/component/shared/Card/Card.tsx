@@ -1,21 +1,24 @@
-import type { Person } from "../../../types/person";
+import type { Member } from "../../../types/members";
+import { InstagramIcon, TikTokIcon, YouTubeIcon } from "../icons/SocialNetwork";
 
 interface CardProps {
-  person: Person;
+  member: Member;
   onClick: () => void;
 }
 
-export function Card({ person, onClick }: CardProps) {
+export function Card({ member, onClick }: CardProps) {
+  
+
   return (
     <div
       onClick={onClick}
-      className="group translate-y-8 cursor-pointer rounded-2xl border border-stone-200 bg-gradient-to-br from-stone-50 to-stone-100 p-6 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+      className="group translate-y-8 cursor-pointer rounded-2xl border border-stone-200 bg-linear-to-br from-stone-50 to-stone-100 p-6 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl"
     >
       {/* <!-- Profile Photo --> */}
       <div className="mb-4 flex justify-center">
         <img
-          src={person.profileImage}
-          alt={person.name}
+          src={member.picture_url}
+          alt={member.member_name}
           className="h-20 w-20 rounded-full border-4 border-white object-cover shadow-lg transition-transform duration-300 group-hover:shadow-xl"
         />
       </div>
@@ -25,39 +28,68 @@ export function Card({ person, onClick }: CardProps) {
         <div>
           {/* Name */}
           <h3 className="mb-2 line-clamp-2 text-lg font-semibold text-stone-800 capitalize">
-            {person.name}
+            {`${member.member_name} ${member.father_last_name}`}
           </h3>
           {/* Location */}
-          <p className="mb-5 text-sm font-bold text-stone-500">
-            {person.city_country}
+          <p className="mb-3 py-1 text-sm font-bold text-stone-500">
+            {member.address_city},{" "}
+            {member.address_country}
           </p>
         </div>
         <div className="space-y-3">
           {/* Profesion */}
-          <div className="rounded-full bg-gradient-to-r from-[#968279] to-bossDark px-3 py-2 text-sm font-semibold text-white shadow-md">
-            {person.carrer}
+          <div className="rounded-full bg-linear-to-br from-bossDark/80 to-bossDark px-3 py-2 text-xs font-semibold text-white shadow-md">
+            {member.career}
           </div>
           {/* Social Network Link */}
-          <a
-            href={person.socialNetwork}
-            className="inline-flex w-full items-center justify-center rounded-full border border-stone-300/50 bg-stone-200/80 px-4 py-2 text-sm font-bold text-stone-700 backdrop-blur-sm transition-all duration-200 hover:bg-stone-200 hover:shadow-md"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <svg
-              className="mr-2 h-4 w-4"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-            Ver perfil
-          </a>
+          <div className="flex justify-center items-center space-x-4"
+          onClick={(e) => e.stopPropagation()} >
+            {member.instagram_url && (
+                <a
+                href={`http://www.instagram.com/${member.instagram_url}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform hover:scale-120 transition-all duration-300"
+                >
+                <InstagramIcon colorFill="bossDark" />
+                </a>
+            )}
+            {member.tiktok_url && (
+              <a
+                href={`http://www.tiktok.com/@${member.tiktok_url}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform hover:scale-120 transition-all duration-300"
+              >
+                <TikTokIcon colorFill="bossDark" />
+              </a>
+            )}
+            {
+             member.youtube_url && (
+              <a
+                href={`http://www.youtube.com/@${member.youtube_url}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform hover:scale-120 transition-all duration-300"
+              >
+                <YouTubeIcon colorFill="bossDark" />
+              </a>
+            ) 
+            }
+            {
+             member.website_url && (
+              <a
+                href={member.website_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-black text-bossDark transform hover:scale-120 transition-all duration-300"
+              >
+                <img width="24" height="24" src="./src/assets/icons/wwwIcon.png" alt="domain" className="filter-[filter: brightness(0) saturate(100%) invert(47%) sepia(16%) saturate(447%) hue-rotate(333deg) brightness(97%) contrast(90%);]"/>
+              </a>
+            ) 
+            }
+          </div>
+          {/* End Social Network List */}
         </div>
       </div>
     </div>

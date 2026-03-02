@@ -1,15 +1,15 @@
 import { useEffect, useRef } from "react";
 import { HiExternalLink } from "react-icons/hi";
 
-import type { Person } from "../../../types/person";
+import type { Member } from "../../../types/members";
 
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  person: Person | null;
+  member: Member | null;
 }
 
-export function Modal({ isOpen, onClose, person }: ModalProps) {
+export function Modal({ isOpen, onClose, member }: ModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
   const previousActiveElement = useRef<HTMLElement | null>(null);
 
@@ -35,7 +35,7 @@ export function Modal({ isOpen, onClose, person }: ModalProps) {
     }
   }, [isOpen, onClose]);
 
-  if (!isOpen || !person) return null;
+  if (!isOpen || !member) return null;
 
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target !== e.currentTarget) {
@@ -74,18 +74,18 @@ export function Modal({ isOpen, onClose, person }: ModalProps) {
           {/* Img Profile */}
           <div className="modal-image h-110 overflow-hidden rounded-xl bg-gray-200 shadow-lg md:h-108 md:w-80 lg:w-80">
             <img
-              src={person.profileImage}
-              alt={person.name}
+              src={member.picture_url}
+              alt={member.member_name}
               className="h-full w-full object-cover"
             />
           </div>
           {/* Social URL */}
           <div className="mb-10">
             <a
-              href={person.socialNetwork}
+              href={`https://www.instagram.com/${member.instagram_url}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-br from-bossDark to-bossMedium px-8 py-3 font-semibold text-white transition-colors hover:from-bossGrayDark hover:to-bossGrayLight hover:text-black hover:shadow-lg md:mt-6"
+              className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-linear-to-br from-bossDark to-bossMedium px-8 py-3 font-semibold text-white transition-colors hover:from-bossGrayDark hover:to-bossGrayLight hover:text-black hover:shadow-lg md:mt-6"
             >
               Ver Perfil Social
               <HiExternalLink size={24} />
@@ -94,40 +94,43 @@ export function Modal({ isOpen, onClose, person }: ModalProps) {
         </div>
 
         {/* Info */}
-        <div className="modal-info flex-1 space-y-6 md:overflow-y-auto">
+        <div className="modal-info flex-1 space-y-5 md:overflow-y-auto">
           <h2
             id="modal-name"
-            className="mb-6 text-4xl font-light text-stone-700 capitalize"
+            className="text-4xl font-bold text-bossDark capitalize"
           >
-            {person.name}
+            {`${member.member_name} ${member.father_last_name}`} 
           </h2>
+          <p className=" mb-6 text-4xl font-semibold text-bossDark capitalize">
+            {`(${member.nickname})`}
+          </p>
 
           <div className="mt-0 space-y-4 text-stone-600 md:mt-0">
             {/* Name */}
             <div className="flex items-center space-x-3">
               <span className="w-20 font-semibold text-stone-700">Edad:</span>
-              <span>{person.age} años</span>
+              <span>{member.birthday ? new Date().getFullYear() - new Date(member.birthday).getFullYear() : ''} años</span>
             </div>
             {/* location */}
             <div className="flex items-center space-x-3">
               <span className="w-20 font-semibold text-stone-700">
                 Ubicación:
               </span>
-              <span id="modal-location">{person.city_country}</span>
+              <span id="modal-location">{member.address_city}, {member.address_state}, {member.address_country}</span>
             </div>
             {/* Carrer */}
             <div className="flex items-center space-x-3">
               <span className="w-20 font-semibold text-stone-700">
                 Profesión:
               </span>
-              <span id="modal-location">{person.carrer}</span>
+              <span id="modal-location">{member.career}</span>
             </div>
             {/* Goals and dream */}
             <div className="border-t border-stone-200 pt-4">
               <h3 className="mb-2 font-semibold text-stone-700">
                 Propósito/Sueño:
               </h3>
-              <p className="leading-relaxed text-stone-600">{person.goal}</p>
+              <p className="leading-relaxed text-stone-600">{member.dream}</p>
             </div>
             {/* Motivation */}
             <div>
@@ -138,14 +141,14 @@ export function Modal({ isOpen, onClose, person }: ModalProps) {
                 id="modal-motivation"
                 className="leading-relaxed text-stone-600"
               >
-                {person.motivation}
+                {member.motivation}
               </p>
             </div>
             {/* Message */}
             <div>
               <h3 className="mb-2 font-semibold text-stone-700">Mensaje:</h3>
               <p id="modal-message" className="leading-relaxed text-stone-600">
-                {person.message}
+                {member.member_message}
               </p>
             </div>
           </div>
