@@ -41,7 +41,7 @@ export function Card({ member, onClick }: CardProps) {
           </div>
           {/* Social Network Link */}
           <div
-            className="flex justify-center items-center space-x-6"
+            className="flex justify-center items-center space-x-2"
             onClick={(e) => e.stopPropagation()}
           >
             {member.instagram_url && (

@@ -14,7 +14,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
   const previousActiveElement = useRef<HTMLElement | null>(null);
 
-  const socialIconSize = 50;
+  const socialIconSize = 46;
 
   useEffect(() => {
     if (isOpen) {
@@ -84,7 +84,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
           </div>
           {/* Social URL */}
           <div
-            className="flex justify-center items-center space-x-6 my-8"
+            className="flex justify-center items-center space-x-3"
             onClick={(e) => e.stopPropagation()}
           >
             {member.instagram_url && (
