@@ -127,7 +127,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
                 <img
                   width={socialIconSize}
                   height={socialIconSize}
-                  src="./src/assets/icons/wwwIcon.png"
+                  src="https://vzfzqtrfktrvnxdykrbn.supabase.co/storage/v1/object/public/imagesMomboss/assets/wwwIcon.png"
                   alt="domain"
                   className="filter-[filter: brightness(0) saturate(100%) invert(47%) sepia(16%) saturate(447%) hue-rotate(333deg) brightness(97%) contrast(90%);]"
                 />
