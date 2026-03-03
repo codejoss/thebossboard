@@ -36,8 +36,8 @@ export function Card({ member, onClick }: CardProps) {
         </div>
         <div className="space-y-3">
           {/* Profesion */}
-          <div className="rounded-xl h-11 flex items-center justify-center bg-linear-to-br from-bossDark/80 to-bossDark px-3 py-2 text-xs font-semibold text-white shadow-md">
-            {formatCareer(member.career, 60)}
+          <div className="rounded-xl h-11 min-w-30 max-w-60 flex items-center justify-center bg-linear-to-br from-bossDark/80 to-bossDark px-3 py-2 text-xs font-semibold text-white shadow-md">
+            {member.nickname === "Andrea Cazarín" ? member.career : formatCareer(member.career, 60)}
           </div>
           {/* Social Network Link */}
           <div
@@ -84,7 +84,7 @@ export function Card({ member, onClick }: CardProps) {
                 <img
                   width="24"
                   height="24"
-                  src="./src/assets/icons/wwwIcon.png"
+                  src="https://vzfzqtrfktrvnxdykrbn.supabase.co/storage/v1/object/public/imagesMomboss/assets/wwwIcon.png"
                   alt="domain"
                   className="filter-[filter: brightness(0) saturate(100%) invert(47%) sepia(16%) saturate(447%) hue-rotate(333deg) brightness(97%) contrast(90%);]"
                 />
