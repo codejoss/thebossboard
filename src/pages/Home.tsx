@@ -1,7 +1,7 @@
-import MainLayout from "../component/layout/MainLayout.tsx";
-import { Banner } from "../component/shared/Banner/Banner.tsx";
-import { Cardsgrid } from "../component/shared/Cardsgrid";
-import { ButtonBossRoomVIP } from "../component/ui/ButtonBossRoomVIP.tsx";
+import MainLayout from "../components/layout/MainLayout.tsx";
+import { Banner } from "../components/shared/Banner/Banner.tsx";
+import { Cardsgrid } from "../components/shared/Cardsgrid/index.ts";
+import { ButtonBossRoomVIP } from "../components/ui/ButtonBossRoomVIP.tsx";
 
 const Home = () => {
   return (
@@ -11,7 +11,10 @@ const Home = () => {
       </Banner>
       <Cardsgrid />
       <Banner>
-        <ButtonBossRoomVIP textButton="Unirme a la comunidad" className="mb-10" />
+        <ButtonBossRoomVIP
+          textButton="Unirme a la comunidad"
+          className="mb-10"
+        />
       </Banner>
     </MainLayout>
   );
