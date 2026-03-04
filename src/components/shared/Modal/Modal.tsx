@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 
 import type { Member } from "../../../types/members";
-import { formatCareer } from "../../../helpers/formatCarrer";
 import { InstagramIcon, TikTokIcon, YouTubeIcon } from "../icons/SocialNetwork";
+import { getYearsOld, formatFirstLetterCap } from "@/helpers";
 
 interface ModalProps {
   isOpen: boolean;
@@ -14,7 +14,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
   const previousActiveElement = useRef<HTMLElement | null>(null);
 
-  const socialIconSize = 46;
+  const socialIconSize = 30;
 
   useEffect(() => {
     if (isOpen) {
@@ -67,13 +67,13 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
         <button
           onClick={onClose}
           aria-label="Close modal"
-          className="fixed right-6 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-bossDark text-center text-3xl font-bold text-white transition-colors duration-200 hover:bg-bossPink hover:text-black md:absolute md:top-3 md:right-3"
+          className="bg-bossDark hover:bg-bossPink fixed right-6 z-10 flex h-10 w-10 items-center justify-center rounded-full text-center text-3xl font-bold text-white transition-colors duration-200 hover:text-black md:absolute md:top-3 md:right-3"
         >
           ×
         </button>
 
         {/* Data modal */}
-        <div className="mb-0 flex w-full flex-col justify-around items-center md:mb-0 md:w-90 md:items-center">
+        <div className="mb-0 flex w-full flex-col items-center justify-around md:mb-0 md:w-90 md:items-center">
           {/* Img Profile */}
           <div className="modal-image h-110 overflow-hidden rounded-xl bg-gray-200 md:h-108 md:w-80 lg:w-80">
             <img
@@ -83,12 +83,12 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
             />
           </div>
           {/* Social URL */}
-          <div className=" border-3 border-dotted border-bossDark/30 rounded-2xl w-full p-4 m-4 md:max-w-80 md:p-2">
-            <p className=" text-center text-lg text-bossDark  font-bold mb-1">
+          <div className="border-bossDark/30 m-4 w-full rounded-2xl border-3 border-dotted p-4 md:max-w-80 md:p-2">
+            <p className="text-bossDark mb-1 text-center text-lg font-bold">
               Contáctame Aquí:
             </p>
             <div
-              className="flex justify-center items-center space-x-3"
+              className="flex items-center justify-center space-x-3"
               onClick={(e) => e.stopPropagation()}
             >
               {member.instagram_url && (
@@ -96,7 +96,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
                   href={`http://www.instagram.com/${member.instagram_url}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transform hover:scale-120 transition-all duration-300"
+                  className="transform transition-all duration-300 hover:scale-120"
                 >
                   <InstagramIcon size={socialIconSize} />
                 </a>
@@ -106,7 +106,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
                   href={`http://www.tiktok.com/@${member.tiktok_url}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transform hover:scale-120 transition-all duration-300"
+                  className="transform transition-all duration-300 hover:scale-120"
                 >
                   <TikTokIcon size={socialIconSize} />
                 </a>
@@ -116,7 +116,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
                   href={`http://www.youtube.com/@${member.youtube_url}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transform hover:scale-120 transition-all duration-300"
+                  className="transform transition-all duration-300 hover:scale-120"
                 >
                   <YouTubeIcon size={socialIconSize} />
                 </a>
@@ -126,7 +126,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
                   href={member.website_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-black text-bossDark transform hover:scale-120 transition-all duration-300"
+                  className="text-bossDark transform font-black transition-all duration-300 hover:scale-120"
                 >
                   <img
                     width={socialIconSize}
@@ -143,45 +143,44 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
 
         {/* Info */}
         <div className="modal-info flex-1 space-y-4 md:overflow-y-auto">
+          {/* Name */}
           <h2
             id="modal-name"
-            className="text-4xl font-bold text-bossDark capitalize border-b-2 border-stone-300 pb-4"
+            className="text-bossDark border-b-2 border-stone-300 pb-4 text-4xl font-bold capitalize"
           >
             {`${member.member_name} ${member.father_last_name}`}
           </h2>
-          <p className=" mb-6 text-2xl font-semibold text-bossDark capitalize">
+          <p className="text-bossDark mb-6 text-2xl font-semibold capitalize">
             {`(${member.nickname})`}
           </p>
 
           <div className="mt-0 space-y-4 text-stone-600 md:mt-0">
-            {/* Name */}
+            {/* Age */}
             <div className="flex items-center space-x-3">
               <span className="w-20 font-semibold text-stone-700">Edad:</span>
               <span>
-                {member.birthday
-                  ? new Date().getFullYear() -
-                    new Date(member.birthday).getFullYear()
-                  : ""}{" "}
-                años
+                {member.birthday ? getYearsOld(member.birthday) : "-"}
               </span>
             </div>
-            {/* location */}
+            {/* Location */}
             <div className="flex items-center space-x-3">
               <span className="w-20 font-semibold text-stone-700">
                 Ubicación:
               </span>
-              <span id="modal-location">
+              <span id="modal-location" className="capitalize">
                 {member.address_city}, {member.address_state},{" "}
                 {member.address_country}
               </span>
             </div>
-            {/* Carrer */}
-            <div className="flex  space-x-3">
+            {/* Career */}
+            <div className="flex space-x-3">
               <span className="w-20 font-semibold text-stone-700">
                 Profesión:
               </span>
               <span id="modal-location">
-                {formatCareer(member.career, 200)}
+                {member.nickname === "Andrea Cazarín"
+                  ? member.career
+                  : formatFirstLetterCap(member.career)}
               </span>
             </div>
             {/* Goals and dream */}
@@ -189,7 +188,9 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
               <h3 className="mb-2 font-semibold text-stone-700">
                 Propósito/Sueño:
               </h3>
-              <p className="leading-relaxed text-stone-600">{member.dream}</p>
+              <p className="leading-relaxed text-stone-600">
+                {formatFirstLetterCap(member.dream)}
+              </p>
             </div>
             {/* Motivation */}
             <div>
@@ -200,14 +201,14 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
                 id="modal-motivation"
                 className="leading-relaxed text-stone-600"
               >
-                {member.motivation}
+                {formatFirstLetterCap(member.motivation)}
               </p>
             </div>
             {/* Message */}
             <div>
               <h3 className="mb-2 font-semibold text-stone-700">Mensaje:</h3>
               <p id="modal-message" className="leading-relaxed text-stone-600">
-                {member.member_message}
+                {formatFirstLetterCap(member.member_message)}
               </p>
             </div>
           </div>
