@@ -83,56 +83,61 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
             />
           </div>
           {/* Social URL */}
-          <div
-            className="flex justify-center items-center space-x-3"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {member.instagram_url && (
-              <a
-                href={`http://www.instagram.com/${member.instagram_url}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transform hover:scale-120 transition-all duration-300"
-              >
-                <InstagramIcon size={socialIconSize} />
-              </a>
-            )}
-            {member.tiktok_url && (
-              <a
-                href={`http://www.tiktok.com/@${member.tiktok_url}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transform hover:scale-120 transition-all duration-300"
-              >
-                <TikTokIcon size={socialIconSize} />
-              </a>
-            )}
-            {member.youtube_url && (
-              <a
-                href={`http://www.youtube.com/@${member.youtube_url}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transform hover:scale-120 transition-all duration-300"
-              >
-                <YouTubeIcon size={socialIconSize} />
-              </a>
-            )}
-            {member.website_url && (
-              <a
-                href={member.website_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-black text-bossDark transform hover:scale-120 transition-all duration-300"
-              >
-                <img
-                  width={socialIconSize}
-                  height={socialIconSize}
-                  src="https://vzfzqtrfktrvnxdykrbn.supabase.co/storage/v1/object/public/imagesMomboss/assets/wwwIcon.png"
-                  alt="domain"
-                  className="filter-[filter: brightness(0) saturate(100%) invert(47%) sepia(16%) saturate(447%) hue-rotate(333deg) brightness(97%) contrast(90%);]"
-                />
-              </a>
-            )}
+          <div className=" border-3 border-dotted border-bossDark/30 rounded-2xl w-full p-4 m-4 md:max-w-80 md:p-2">
+            <p className=" text-center text-lg text-bossDark  font-bold mb-1">
+              Contáctame Aquí:
+            </p>
+            <div
+              className="flex justify-center items-center space-x-3"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {member.instagram_url && (
+                <a
+                  href={`http://www.instagram.com/${member.instagram_url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transform hover:scale-120 transition-all duration-300"
+                >
+                  <InstagramIcon size={socialIconSize} />
+                </a>
+              )}
+              {member.tiktok_url && (
+                <a
+                  href={`http://www.tiktok.com/@${member.tiktok_url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transform hover:scale-120 transition-all duration-300"
+                >
+                  <TikTokIcon size={socialIconSize} />
+                </a>
+              )}
+              {member.youtube_url && (
+                <a
+                  href={`http://www.youtube.com/@${member.youtube_url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transform hover:scale-120 transition-all duration-300"
+                >
+                  <YouTubeIcon size={socialIconSize} />
+                </a>
+              )}
+              {member.website_url && (
+                <a
+                  href={member.website_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-black text-bossDark transform hover:scale-120 transition-all duration-300"
+                >
+                  <img
+                    width={socialIconSize}
+                    height={socialIconSize}
+                    src="https://vzfzqtrfktrvnxdykrbn.supabase.co/storage/v1/object/public/imagesMomboss/assets/wwwIcon.png"
+                    alt="domain"
+                    className="filter-[filter: brightness(0) saturate(100%) invert(47%) sepia(16%) saturate(447%) hue-rotate(333deg) brightness(97%) contrast(90%);]"
+                  />
+                </a>
+              )}
+            </div>
           </div>
         </div>
 
