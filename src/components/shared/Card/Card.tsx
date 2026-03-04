@@ -1,6 +1,10 @@
-import { formatCareer } from "../../../helpers/formatCarrer";
-import type { Member } from "../../../types/members";
-import { InstagramIcon, TikTokIcon, YouTubeIcon } from "../icons/SocialNetwork";
+import { formatCareer } from "@/helpers";
+import type { Member } from "@/types/members";
+import {
+  InstagramIcon,
+  TikTokIcon,
+  YouTubeIcon,
+} from "@/components/shared/icons/SocialNetwork";
 
 interface CardProps {
   member: Member;
@@ -30,7 +34,7 @@ export function Card({ member, onClick }: CardProps) {
             {`${member.member_name} ${member.father_last_name}`}
           </h3>
           {/* Location */}
-          <p className="mb-2 py-1 text-sm font-bold text-neutral-500">
+          <p className="mb-4 text-sm font-bold text-neutral-500">
             {member.address_city}, {member.address_country}
           </p>
         </div>
