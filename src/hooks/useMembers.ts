@@ -5,6 +5,6 @@ export const useMembers = () => {
   return useQuery({
     queryKey: ['members'],
     queryFn: getMembers,
-    staleTime: 1000 * 60 * 15, // 15 minutes
+    staleTime: 1000 * 60 * 10, // 10 minutes
   })
 }
