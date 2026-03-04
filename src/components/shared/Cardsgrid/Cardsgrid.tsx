@@ -34,12 +34,12 @@ export const Cardsgrid = () => {
   if (isLoading) return <SkeletonLoading />;
   if (isError) return <p>Error al cargar los miembros {error?.message}</p>;
   if (members.length === 0)
-    return <p className="text-center my-10">No se encontraron miembros.</p>;
+    return <p className="my-10 text-center">No se encontraron miembros.</p>;
 
   return (
     <div className="mb-20 w-full px-5 md:mt-0 md:px-24">
-      <div className="flex flex-col items-center justify-center">
-        <section className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="mb-5 flex flex-col items-center justify-center">
+        <section className="grid w-full grid-cols-[repeat(auto-fit,minmax(20rem,20rem))] justify-center gap-8">
           {sortedMembers.map((member) => (
             <Card
               key={member.id}
