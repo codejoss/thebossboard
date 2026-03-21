@@ -1,10 +1,6 @@
 function Footer() {
   const socialMediaInfo = [
     {
-      name: "Comunidad",
-      url: "https://www.andreacazarin.com/community/the-boss-room-vip",
-    },
-    {
       name: "TheBossBoard",
       url: "https://codejoss.github.io/thebossboard/",
     },
@@ -15,10 +11,10 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-bossDark shadow-sm dark:bg-bossDark ">
+    <footer className="bg-bossDarkz dark:bg-bossDark shadow-sm">
       <div className="mx-auto w-full max-w-7xl p-4 md:py-6">
         <div className="justify-between sm:flex sm:items-center sm:justify-between">
-          <div className="mb-2 flex justify-center items-center sm:mb-0">
+          <div className="mb-2 flex items-center justify-center sm:mb-0">
             <div className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
               TheBossRoomVIP
             </div>
@@ -48,7 +44,7 @@ function Footer() {
           href="https://github.com/codejoss"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm flex justify-center font-bold text-white sm:text-center dark:text-white"
+          className="flex justify-center text-sm font-bold text-white sm:text-center dark:text-white"
         >
           Coding with love 🤍
         </a>
