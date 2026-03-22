@@ -1,11 +1,13 @@
-import MainLayout from "../components/layout/MainLayout.tsx";
 import { Banner } from "../components/shared/Banner/Banner.tsx";
 import { Cardsgrid } from "../components/shared/Cardsgrid/index.ts";
 import { ButtonBossRoomVIP } from "../components/ui/ButtonBossRoomVIP.tsx";
 
-const Home = () => {
+export const BossBoardPage = () => {
   return (
-    <MainLayout>
+    <div>
+      <p className="animate-slide-up bg-bossDark m-0 pb-6 text-center text-xl font-bold text-balance text-white">
+        Conoce a las jefas increíbles que forman parte de nuestra comunidad
+      </p>
       <Banner>
         <ButtonBossRoomVIP textButton="¡Quiero Entrar!" className="mt-10" />
       </Banner>
@@ -16,8 +18,6 @@ const Home = () => {
           className="mb-10"
         />
       </Banner>
-    </MainLayout>
+    </div>
   );
 };
-
-export default Home;

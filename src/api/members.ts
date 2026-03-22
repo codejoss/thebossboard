@@ -1,4 +1,4 @@
-import supabase  from '../lib/supabase';
+import { supabase } from '../lib/supabase';
 import type { Member } from '../types/members';
 
 export const getMembers = async (): Promise<Member[]> => {

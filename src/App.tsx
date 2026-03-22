@@ -1,9 +1,9 @@
-import Home from "./pages/Home.tsx";
+import { AppRouter } from "./AppRouter.tsx";
 
 function App() {
   return (
     <>
-      <Home />
+      <AppRouter />
     </>
   );
 }

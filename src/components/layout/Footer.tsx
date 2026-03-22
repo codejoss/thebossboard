@@ -1,4 +1,4 @@
-function Footer() {
+export function Footer() {
   const socialMediaInfo = [
     {
       name: "TheBossBoard",
@@ -52,5 +52,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;
