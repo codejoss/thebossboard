@@ -1,8 +1,10 @@
+import { Link } from "react-router";
+
 export function Footer() {
   const socialMediaInfo = [
     {
-      name: "TheBossBoard",
-      url: "https://codejoss.github.io/thebossboard/",
+      name: "Ranking",
+      url: "/thebossboard/rankingstars",
     },
     {
       name: "Instagram",
@@ -25,14 +27,14 @@ export function Footer() {
             {socialMediaInfo.map((element, index) => {
               return (
                 <li key={index}>
-                  <a
-                    href={element.url}
+                  <Link
+                    to={element.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="me-4 hover:underline md:me-6"
                   >
                     {element.name}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
