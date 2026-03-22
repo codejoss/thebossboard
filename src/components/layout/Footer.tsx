@@ -4,7 +4,7 @@ export function Footer() {
   const socialMediaInfo = [
     {
       name: "Ranking",
-      url: "/rankingstars",
+      url: "/thebossboard/rankingstars",
     },
     {
       name: "Instagram",
