@@ -11,9 +11,14 @@ export const AppRouter = () => {
         <Route path="/thebossboard/" element={<MainLayout />}>
           <Route index element={<BossBoardPage />} />
           <Route path="/thebossboard/rankingstars" element={<RankingStars />} />
-          <Route path="*" element={<Notfound404Page />} />
         </Route>
+
         <Route path="/" element={<Navigate to="/thebossboard/" />} />
+        <Route
+          path="/rankingstars"
+          element={<Navigate to="/thebossboard/rankingstars" />}
+        />
+        <Route path="*" element={<Notfound404Page />} />
       </Routes>
     </BrowserRouter>
   );
