@@ -1,16 +1,15 @@
-import logoUrl from '../../assets/img/BossBoard-white.png';
+import logoUrl from "../../assets/img/BossBoard-white.png";
 
-const Header = () => {
+export const Header = () => {
   return (
-    <div className="border-b border-stone-500/20 bg-bossDark py-12">
-      <div className="container mx-auto px-6 text-center">
-        <img className="inline h-40" src={logoUrl} alt="logo for The BossBoard" />
-        <p className="animate-slide-up mt-4 text-xl font-bold text-white">
-          Conoce a las jefas increíbles que forman parte de nuestra comunidad
-        </p>
+    <div className="bg-bossDark border-b border-stone-500/20 py-4">
+      <div className="container mx-auto text-center">
+        <img
+          className="inline h-30"
+          src={logoUrl}
+          alt="logo for The BossBoard"
+        />
       </div>
     </div>
   );
 };
-
-export default Header;
