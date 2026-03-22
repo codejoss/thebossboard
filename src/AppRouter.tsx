@@ -13,6 +13,10 @@ export const AppRouter = () => {
           <Route path="rankingstars" element={<RankingStars />} />
         </Route>
         <Route path="/" element={<Navigate to="/thebossboard" />} />
+        <Route
+          path="/rankingstars"
+          element={<Navigate to="/thebossboard/" />}
+        />
         <Route path="*" element={<Notfound404Page />} />
       </Routes>
     </HashRouter>
