@@ -1,28 +1,41 @@
 # The Boss Board
 
-**The Boss Board** is a dedicated digital platform designed for the "Digital Mom Boss" community. It serves as a central hub for accessing exclusive resources, networking, and community events.
+**The Boss Board** is a dedicated digital platform designed for the "Digital Mom Boss" community. It serves as a central hub for accessing exclusive resources, networking, and community events, showcasing members in a dynamic, rankable grid.
 
-![Boss Board Banner](./src/assets/banner.png)
+![The Boss Board](./src/assets/img/TheBossBoard-white.png)
 
-## Features
+## 🚀 Features
 
--   **Home Dashboard**: A welcoming landing page featuring community highlights.
--   **Boss Room VIP**: Exclusive access area for VIP members ("¡Quiero Entrar!").
--   **Community Grid**: A visual card grid layout showcasing members or resources (`Cardsgrid`).
--   **Responsive Design**: Built to work seamlessly on desktop and mobile devices.
+-   **Home Dashboard**: A dynamic member directory featuring community highlights and resource cards.
+-   **Ranking System**: A specialized "Ranking Stars" view to highlight top community contributors.
+-   **Community Grid**: A visual card grid layout showcasing members with real-time data from Supabase.
+-   **Responsive Design**: Built to work seamlessly on desktop and mobile devices using Tailwind CSS 4.
+-   **Efficient Data Fetching**: Powered by React Query for caching and state management.
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 This project is built with a modern frontend stack:
 
--   **[React 19](https://react.dev/)**: The library for web and native user interfaces.
--   **[TypeScript](https://www.typescriptlang.org/)**: Strongly typed JavaScript for better developer experience.
--   **[Vite](https://vitejs.dev/)**: Next Generation Frontend Tooling.
--   **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework for rapid UI development.
+-   **[React 19](https://react.dev/)**: For building a responsive and interactive user interface.
+-   **[TypeScript](https://www.typescriptlang.org/)**: To ensure type safety and improved developer experience.
+-   **[Vite](https://vitejs.dev/)**: For ultra-fast development and optimized production builds.
+-   **[Supabase](https://supabase.com/)**: As the backend provider for database management and real-time features.
+-   **[React Query (TanStack)](https://tanstack.com/query/latest)**: For robust server-state management.
+-   **[Tailwind CSS 4](https://tailwindcss.com/)**: A utility-first CSS framework for rapid and modern UI development.
+-   **[React Router](https://reactrouter.com/)**: For seamless navigation within the SPA.
 
-## Getting Started
+## 📦 Project Structure
 
-Follow these instructions to get a copy of the project up and running on your local machine.
+-   `src/api`: API calls and Supabase queries.
+-   `src/components`: Reusable UI components categorized into `layout`, `shared`, and `ui`.
+-   `src/contexts`: React Context definitions for global state management.
+-   `src/helpers`: Utility functions for formatting and data manipulation.
+-   `src/hooks`: Custom React hooks for data fetching and logic.
+-   `src/lib`: Configuration for external libraries like Supabase.
+-   `src/pages`: Main application views (`BossBoardPage`, `RankingStars`).
+-   `src/types`: TypeScript interfaces and type definitions.
+
+## 🏁 Getting Started
 
 ### Prerequisites
 
@@ -42,33 +55,20 @@ Follow these instructions to get a copy of the project up and running on your lo
     npm install
     ```
 
-### Running Development Server
+3.  Configure Environment Variables:
+    Create a `.env` file in the root directory and add your Supabase credentials:
+    ```env
+    VITE_SUPABASE_URL=your_supabase_url
+    VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY=your_supabase_anon_key
+    ```
 
-Start the development server with hot module replacement:
+### Available Scripts
 
-```bash
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
-
-### Building for Production
-
-To build the application for production:
-
-```bash
-npm run build
-```
-
-The build artifacts will be stored in the `dist/` directory.
-
-## Project Structure
-
--   `src/components`: Reusable UI components (layout, shared, ui).
--   `src/pages`: Application views/pages (e.g., Home).
--   `src/assets`: Static assets like images.
--   `src/contexts`: React Context definitions.
--   `src/types`: TypeScript type definitions.
+-   `npm run dev`: Start the development server.
+-   `npm run build`: Build the application for production.
+-   `npm run preview`: Preview the production build locally.
+-   `npm run lint`: Run ESLint to check for code quality issues.
+-   `npm run deploy`: Deploy the `dist/` folder to GitHub Pages.
 
 ---
 
