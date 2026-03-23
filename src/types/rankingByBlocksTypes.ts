@@ -9,4 +9,5 @@ export interface RankingByBlocksType {
   block_stars: number;
   block_rank: number;
   photo_url: string | undefined;
+  number_of_block: number;
 }

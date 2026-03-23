@@ -13,6 +13,7 @@ interface RankingItem {
   nickname: string;
   block_stars: number;
   block_rank: number;
+  number_of_block: number;
 }
 
 // ─── Star Badge ────────────────────────────────────────────────────────────────
@@ -109,6 +110,9 @@ export function RankingStars() {
   const blockName = Array.isArray(data) ? data[0]?.block_name : undefined;
   const yearOfBlock = Array.isArray(data) ? data[0]?.year_of_block : undefined;
   const handle = Array.isArray(data) ? data[0]?.handle : undefined;
+  const numberOfBlock = Array.isArray(data)
+    ? data[0]?.number_of_block
+    : undefined;
 
   // Crear mapa de member_id -> picture_url
   const membersMap = React.useMemo(() => {
@@ -124,27 +128,28 @@ export function RankingStars() {
   }, [membersData]);
 
   return (
-    <div className="m-8 mx-auto w-full max-w-sm font-['Montserrat',sans-serif]">
+    <div className="m-8 mx-auto w-full max-w-sm px-2 font-['Montserrat',sans-serif]">
       {/* Tarjeta principal */}
       <div className="from-bossMedium to-bossDark relative overflow-hidden rounded-3xl bg-linear-to-b px-5 py-7">
-        {/* Header */}
-        <p className="mb-1 text-center text-sm font-semibold tracking-wide text-[#7A5530] uppercase">
-          {blockName} — {yearOfBlock}
+        <p className="mr-2 text-center text-2xl font-bold text-white">
+          {yearOfBlock}
         </p>
-        <div className="mb-1 text-center leading-tight">
-          <p className="font-bebas text-5xl font-bold tracking-wider text-white">
-            RETOS <span className="text-bossPink">BOSS</span>
-          </p>
-          <p className="mt-0.5 text-sm font-bold tracking-wider text-white/80 uppercase">
-            The Boss Room VIP
-          </p>
-        </div>
-        {/* Pill título */}
-        <div className="my-4 rounded-xl bg-[#7A5530] py-2.5 text-center">
+        {/* Header */}
+        <p className="font-bebas text-center text-4xl font-bold tracking-wider text-white">
+          RETOS <span className="text-bossPink">BOSS</span>
+        </p>
+
+        <div className="my-1 rounded-xl bg-[#7A5530] py-2.5 text-center">
           <span className="font-bebas text-xl font-bold tracking-[8px] text-white">
             RANKING
           </span>
         </div>
+        <div className="my-2 flex justify-center">
+          <p className="text-bossGrayLight mb-6 text-center text-sm font-semibold tracking-wide uppercase">
+            Bloque {numberOfBlock} - {blockName}
+          </p>
+        </div>
+        {/* Pill título */}
         {/* Lista */}
         <div className="flex flex-col gap-2.5">
           {isLoading && (
@@ -179,6 +184,11 @@ export function RankingStars() {
           >
             {handle || "@thebossroomvip"}
           </a>
+        </div>
+        <div className="mt-3 text-center leading-tight">
+          <p className="mt-0.5 text-sm font-bold tracking-wider text-white/80 uppercase">
+            The Boss Room VIP
+          </p>
         </div>
       </div>
     </div>
