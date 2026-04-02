@@ -21,7 +21,7 @@ export function Card({ member, onClick }: CardProps) {
       <div className="mb-4 flex justify-center">
         <img
           src={member.picture_url}
-          alt={member.member_name}
+          alt={`Foto de perfil de ${member.member_name} ${member.father_last_name}`}
           className="h-28 w-28 rounded-full border-4 border-white object-cover shadow-lg transition-transform duration-300"
         />
       </div>
@@ -31,11 +31,12 @@ export function Card({ member, onClick }: CardProps) {
         <div>
           {/* Name */}
           <h3 className="mb-2 line-clamp-2 text-lg font-semibold text-stone-800 capitalize">
-            {`${member.member_name} ${member.father_last_name}`}
+            {`${member.member_name.toLowerCase()} ${member.father_last_name.toLowerCase()}`}
           </h3>
           {/* Location */}
-          <p className="mb-4 text-sm font-bold text-neutral-500">
-            {member.address_city}, {member.address_country}
+          <p className="mb-4 text-sm font-bold text-neutral-500 capitalize">
+            {member.address_city.toLowerCase()},{" "}
+            {member.address_country.toLowerCase()}
           </p>
         </div>
 

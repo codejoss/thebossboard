@@ -148,10 +148,10 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
             id="modal-name"
             className="text-bossDark border-b-2 border-stone-300 pb-4 text-4xl font-bold capitalize"
           >
-            {`${member.member_name} ${member.father_last_name}`}
+            {`${member.member_name.toLowerCase()} ${member.father_last_name.toLowerCase()}`}
           </h2>
           <p className="text-bossDark mb-6 text-2xl font-semibold capitalize">
-            {`(${member.nickname})`}
+            {`(${member.nickname.toLowerCase()})`}
           </p>
 
           <div className="mt-0 space-y-4 text-stone-600 md:mt-0">
@@ -168,8 +168,9 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
                 Ubicación:
               </span>
               <span id="modal-location" className="capitalize">
-                {member.address_city}, {member.address_state},{" "}
-                {member.address_country}
+                {member.address_city.toLowerCase()},{" "}
+                {member.address_state.toLowerCase()},{" "}
+                {member.address_country.toLowerCase()}
               </span>
             </div>
             {/* Career */}
