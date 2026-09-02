@@ -39,7 +39,7 @@ This project is built with a modern frontend stack:
 
 ### Prerequisites
 
--   Node.js (v18 or higher recommended)
+-   Node.js 20.19 or newer (or Node.js 22.12 or newer)
 -   npm (or yarn/pnpm)
 
 ### Installation
@@ -55,12 +55,24 @@ This project is built with a modern frontend stack:
     npm install
     ```
 
-3.  Configure Environment Variables:
-    Create a `.env` file in the root directory and add your Supabase credentials:
+3.  Configure environment variables:
+
+    Create a `.env.local` file in the project root and add your Supabase credentials:
+
     ```env
-    VITE_SUPABASE_URL=your_supabase_url
-    VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY=your_supabase_anon_key
+    VITE_SUPABASE_URL=https://your-project-id.supabase.co
+    VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
     ```
+
+    Use the values from your Supabase project's API settings. The `.env.local` file is ignored by Git and must not be committed.
+
+4.  Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+    Open the local URL printed by Vite. Restart the server whenever you change `.env.local`, because Vite loads environment variables at startup.
 
 ### Available Scripts
 
