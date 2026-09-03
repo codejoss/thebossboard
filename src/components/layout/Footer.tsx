@@ -23,6 +23,14 @@ export function Footer() {
           </div>
 
           <ul className="mb-6 flex flex-wrap items-center justify-center text-sm font-medium text-gray-200 sm:mb-0 dark:text-gray-100">
+            <li>
+              <a
+                href={`${import.meta.env.BASE_URL}simuladorComisiones.html`}
+                className="me-4 hover:underline md:me-6"
+              >
+                Simulador de comisiones
+              </a>
+            </li>
             {/* URLs build */}
             {socialMediaInfo.map((element, index) => {
               const isExternal = element.url.startsWith("http");

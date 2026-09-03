@@ -5,12 +5,12 @@ import { ButtonBossRoomVIP } from "../components/ui/ButtonBossRoomVIP.tsx";
 export const BossBoardPage = () => {
   return (
     <div>
-      <p className="animate-slide-up bg-bossDark m-0 pb-6 text-center text-xl font-bold text-balance text-white">
-        Conoce a las jefas increíbles que forman parte de nuestra comunidad
-      </p>
       <Banner>
         <ButtonBossRoomVIP textButton="¡Quiero Entrar!" className="mt-10" />
       </Banner>
+      <p className="animate-slide-up text-bossDark m-0 px-4 py-6 text-center text-2xl font-bold text-balance md:text-3xl">
+        Conoce a las jefas increíbles que forman parte de nuestra comunidad
+      </p>
       <Cardsgrid />
       <Banner>
         <ButtonBossRoomVIP
