@@ -1,0 +1,1397 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html {
+          scroll-behavior: smooth;
+        }
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#ffb1c0",
+              "on-tertiary-fixed": "#390917",
+              "secondary-fixed-dim": "#ddc1b4",
+              "surface-variant": "#e9e1dd",
+              "inverse-primary": "#ffb2be",
+              "accent-rose-soft": "#fff0f3",
+              "on-secondary": "#ffffff",
+              "primary-fixed": "#ffd9de",
+              "inverse-on-surface": "#f7efeb",
+              secondary: "#8d766c",
+              "surface-container": "#f4ece8",
+              "tertiary-fixed-dim": "#ffb1bf",
+              "primary-container": "#f89cae",
+              "secondary-fixed": "#fbdccf",
+              "tertiary-fixed": "#ffd9de",
+              "surface-bright": "#fff8f5",
+              "on-error": "#ffffff",
+              "on-surface-variant": "#6d5850",
+              "on-primary": "#4a3b34",
+              "on-surface": "#2b221e",
+              "success-earnings": "#10B981",
+              "inverse-surface": "#33302d",
+              "surface-dim": "#e0d8d5",
+              "tertiary-container": "#a5606e",
+              "secondary-container": "#fbdccf",
+              surface: "#fff8f5",
+              "surface-card": "#FFFFFF",
+              "on-tertiary": "#ffffff",
+              "error-container": "#ffdad6",
+              tertiary: "#8d766c",
+              "on-background": "#2b221e",
+              "surface-container-lowest": "#ffffff",
+              "accent-hotpink": "#ffb1c0",
+              "surface-container-low": "#faf2ee",
+              primary: "#ffb1c0",
+              "on-primary-fixed": "#4a3b34",
+              "on-primary-container": "#4a3b34",
+              error: "#ba1a1a",
+              "on-tertiary-fixed-variant": "#6f3441",
+              "outline-variant": "#e4bdc2",
+              "on-secondary-fixed": "#281810",
+              "on-primary-fixed-variant": "#4a3b34",
+              "warm-border": "#E7DFD9",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed-variant": "#574239",
+              "surface-canvas": "#FAF7F5",
+              "surface-container-high": "#eee7e3",
+              "surface-container-highest": "#e9e1dd",
+              background: "#fff8f5",
+              "on-tertiary-container": "#fffbff",
+              "on-secondary-container": "#766055",
+              outline: "#8d766c",
+              "primary-fixed-dim": "#ffb2be",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "space-md": "1rem",
+              gutter: "1.5rem",
+              "space-lg": "1.5rem",
+              "margin-mobile": "1rem",
+              "space-xs": "0.5rem",
+              "margin-desktop": "2.5rem",
+              "space-2xl": "3rem",
+              "space-sm": "0.75rem",
+              "space-3xl": "4rem",
+              "space-xl": "2rem",
+              "space-2xs": "0.25rem",
+            },
+            fontFamily: {
+              "headline-md": ["Plus Jakarta Sans"],
+              title: ["Plus Jakarta Sans"],
+              "label-sm": ["Plus Jakarta Sans"],
+              "numeric-metric": ["Plus Jakarta Sans"],
+              "display-mobile": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "body-md": ["Plus Jakarta Sans"],
+              "label-lg": ["Plus Jakarta Sans"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              "body-lg": ["Plus Jakarta Sans"],
+              display: ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "headline-md": [
+                "24px",
+                {
+                  lineHeight: "32px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              title: [
+                "18px",
+                { lineHeight: "26px", letterSpacing: "0em", fontWeight: "600" },
+              ],
+              "label-sm": [
+                "11px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.06em",
+                  fontWeight: "700",
+                },
+              ],
+              "numeric-metric": [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "display-mobile": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-lg": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-md": [
+                "14px",
+                { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "label-lg": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg-mobile": [
+                "26px",
+                {
+                  lineHeight: "34px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-lg": [
+                "16px",
+                { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              display: [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.03em",
+                  fontWeight: "800",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-surface-canvas font-body-md text-on-surface flex min-h-screen flex-col antialiased selection:bg-[#ffb1c0] selection:text-[#4a3b34]"
+  >
+    <header
+      class="fixed top-0 z-50 w-full bg-[#8d766c]/95 shadow-[0_1px_8px_rgba(0,0,0,0.12)] backdrop-blur-xl"
+    >
+      <div
+        class="px-gutter gap-space-md mx-auto flex h-20 max-w-[1200px] items-center justify-between"
+      >
+        <div class="gap-space-lg flex items-center">
+          <a
+            class="gap-space-xs group flex items-center text-left"
+            data-path="simulador"
+            href="./"
+            ><img
+              alt="Logo de The Boss Board"
+              class="h-12 w-auto object-contain"
+              src="./BossBoard-white.png"
+            />
+            <div class="flex flex-col">
+              <span
+                class="font-title text-2xl font-extrabold tracking-tight text-white transition-colors group-hover:text-[#fde7e9]"
+                >Simulador</span
+              ><span
+                class="font-label-sm text-label-sm hidden tracking-wider text-white/75 uppercase sm:block"
+                >de comisiones</span
+              >
+            </div></a
+          >
+          <nav
+            class="gap-space-2xs p-space-2xs hidden items-center rounded-xl bg-white/10 lg:flex"
+          >
+            <a
+              aria-current="page"
+              class="px-space-md py-space-xs rounded-xl bg-[#ffb1c0] font-bold text-[#4a3b34] shadow-[0_4px_14px_0_rgba(255,177,192,0.35)] transition-all"
+              href="#"
+              >Simulador</a
+            ><a
+              class="px-space-md py-space-xs font-label-lg text-label-lg rounded-xl text-white transition-all hover:bg-white/15 hover:text-white"
+              href="#tabla-comisiones"
+              >Tabla de Comisiones</a
+            >
+          </nav>
+        </div>
+        <a
+          class="px-space-md font-label-lg text-label-lg inline-flex h-11 items-center justify-center rounded-xl bg-[#ffb1c0] font-bold text-[#4a3b34] shadow-[0_4px_14px_0_rgba(255,177,192,0.4)] transition-all hover:bg-[#f89cae] active:scale-95"
+          href="https://www.andreacazarin.com/thebossroomvip"
+          target="_blank"
+          rel="noopener noreferrer"
+          >¡Quiero entrar!</a
+        >
+      </div>
+    </header>
+    <main class="bg-surface-canvas w-full flex-1 pt-20">
+      <div class="flex w-full flex-col">
+        <!-- Subtle decorative ambient glows -->
+        <div
+          class="px-gutter py-space-xl sm:py-space-2xl relative mx-auto w-full max-w-[1200px] overflow-hidden"
+        >
+          <div
+            class="pointer-events-none absolute top-10 left-1/4 -z-10 h-96 w-96 rounded-full bg-[#ffb1c0]/20 blur-3xl"
+          ></div>
+          <div
+            class="pointer-events-none absolute top-1/3 right-10 -z-10 h-80 w-80 rounded-full bg-[#8d766c]/10 blur-3xl"
+          ></div>
+          <!-- Header Section -->
+          <div
+            class="mb-space-2xl mx-auto flex max-w-3xl flex-col items-center text-center"
+          >
+            <div
+              class="gap-space-2xs px-space-md py-space-2xs mb-space-sm inline-flex items-center rounded-full border border-[#ffb1c0]/40 bg-[#ffb1c0]/30 shadow-sm"
+            >
+              <span class="material-symbols-outlined text-[18px] text-[#8d766c]"
+                >local_fire_department</span
+              >
+              <span
+                class="font-label-sm text-label-sm font-bold tracking-wider text-[#4a3b34] uppercase"
+                >Programa de Afiliadas VIP</span
+              >
+            </div>
+            <h1
+              class="font-display text-display text-on-surface leading-tight tracking-tight"
+            >
+              Simulador de Comisiones
+            </h1>
+            <p
+              class="mt-space-sm font-body-lg text-body-lg text-on-surface-variant max-w-2xl"
+            >
+              Calcula la comisión que recibirás este mes por las personas que
+              ingresaron a The Boss Board con tu recomendación.
+            </p>
+          </div>
+          <!-- Main Dual-Pane Simulator Area -->
+          <div
+            class="gap-space-xl grid grid-cols-1 items-start lg:grid-cols-12"
+          >
+            <!-- Left Column: Controls & Configuration (7 cols) -->
+            <div class="gap-space-xl flex flex-col lg:col-span-7">
+              <!-- STEP 1: Plan Selection Cards -->
+              <div
+                class="bg-surface-card p-space-lg sm:p-space-xl border-warm-border/60 rounded-xl border shadow-md"
+              >
+                <div
+                  class="gap-space-sm mb-space-md flex items-center justify-between"
+                >
+                  <div class="gap-space-xs flex items-center">
+                    <span
+                      class="text-label-sm flex h-7 w-7 items-center justify-center rounded-full bg-[#ffb1c0] font-extrabold text-[#4a3b34] shadow-sm"
+                      >1</span
+                    >
+                    <h2
+                      class="font-headline-md text-headline-md text-on-surface"
+                    >
+                      Tu Tipo de Membresía Actual
+                    </h2>
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm hidden font-bold tracking-wider text-[#8d766c] uppercase sm:inline"
+                    >Paso 1 de 2</span
+                  >
+                </div>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mb-space-lg"
+                >
+                  El porcentaje de tus comisiones directas depende de tu propio
+                  nivel de socia activa.
+                </p>
+                <div
+                  class="gap-space-md grid grid-cols-1 sm:grid-cols-2"
+                  id="userTierSelector"
+                >
+                  <!-- Card 1: Boss Vitalicia -->
+                  <div
+                    class="p-space-lg bg-surface-card relative cursor-pointer rounded-xl shadow-lg ring-2 ring-[#ffb1c0] transition-all duration-200"
+                    id="tierCardVitalicia"
+                    onclick="setUserTier('vitalicia')"
+                  >
+                    <div
+                      class="px-space-xs font-label-sm absolute -top-3 right-4 flex items-center gap-1 rounded-full border border-white/60 bg-[#ffb1c0] py-[2px] text-[10px] font-bold tracking-wider text-[#4a3b34] uppercase shadow-sm"
+                    >
+                      <span class="material-symbols-outlined text-[13px]"
+                        >stars</span
+                      >
+                      Más Popular • 30%
+                    </div>
+                    <div class="mb-space-xs flex items-center justify-between">
+                      <span class="font-title text-title text-on-surface"
+                        >Boss Vitalicia</span
+                      >
+                      <div
+                        class="flex h-5 w-5 items-center justify-center rounded-full bg-[#ffb1c0] text-[#4a3b34]"
+                        id="radioVitalicia"
+                      >
+                        <span
+                          class="material-symbols-outlined text-[14px] font-bold"
+                          >check</span
+                        >
+                      </div>
+                    </div>
+                    <div class="mt-space-2xs flex items-baseline gap-1">
+                      <span
+                        class="font-headline-lg text-headline-lg text-[#8d766c]"
+                        >30%</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface-variant uppercase"
+                        >Regular</span
+                      >
+                    </div>
+                    <p
+                      class="font-label-sm text-label-sm mt-space-2xs font-medium text-[#8d766c]"
+                    >
+                      15% en campañas o cupones especiales
+                    </p>
+                    <!-- Mini breakdown table -->
+                    <div
+                      class="mt-space-md pt-space-sm bg-surface-container-low/60 p-space-xs rounded-lg text-left"
+                    >
+                      <div
+                        class="text-on-surface-variant flex justify-between py-1 text-[11px] font-semibold"
+                      >
+                        <span>Bloque ($43):</span>
+                        <span class="font-bold text-[#8d766c]">$12.90 USD</span>
+                      </div>
+                      <div
+                        class="text-on-surface-variant flex justify-between py-1 text-[11px] font-semibold"
+                      >
+                        <span>Anual ($97):</span>
+                        <span class="font-bold text-[#8d766c]">$29.10 USD</span>
+                      </div>
+                      <div
+                        class="text-on-surface-variant flex justify-between py-1 text-[11px] font-semibold"
+                      >
+                        <span>Vitalicia Reg. ($397):</span>
+                        <span class="font-bold text-[#8d766c]"
+                          >$119.10 USD</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 2: Boss Anual -->
+                  <div
+                    class="p-space-lg bg-surface-container-low relative cursor-pointer rounded-xl transition-all duration-200 hover:shadow-md"
+                    id="tierCardAnual"
+                    onclick="setUserTier('anual')"
+                  >
+                    <div
+                      class="px-space-xs font-label-sm absolute -top-3 right-4 rounded-full bg-[#8d766c] py-[2px] text-[10px] font-bold tracking-wider text-white uppercase shadow-sm"
+                    >
+                      15% Comisión
+                    </div>
+                    <div class="mb-space-xs flex items-center justify-between">
+                      <span class="font-title text-title text-on-surface"
+                        >Boss Anual</span
+                      >
+                      <div
+                        class="bg-surface-container-highest flex h-5 w-5 items-center justify-center rounded-full text-transparent"
+                        id="radioAnual"
+                      >
+                        <span class="material-symbols-outlined text-[14px]"
+                          >check</span
+                        >
+                      </div>
+                    </div>
+                    <div class="mt-space-2xs flex items-baseline gap-1">
+                      <span
+                        class="font-headline-lg text-headline-lg text-[#8d766c]"
+                        >15%</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface-variant uppercase"
+                        >Regular</span
+                      >
+                    </div>
+                    <p
+                      class="font-label-sm text-label-sm mt-space-2xs font-medium text-[#8d766c]"
+                    >
+                      10% en campañas o cupones especiales
+                    </p>
+                    <!-- Mini breakdown table -->
+                    <div
+                      class="mt-space-md pt-space-sm bg-surface-card p-space-xs rounded-lg text-left"
+                    >
+                      <div
+                        class="text-on-surface-variant flex justify-between py-1 text-[11px] font-semibold"
+                      >
+                        <span>Bloque ($43):</span>
+                        <span class="font-bold text-[#8d766c]">$6.45 USD</span>
+                      </div>
+                      <div
+                        class="text-on-surface-variant flex justify-between py-1 text-[11px] font-semibold"
+                      >
+                        <span>Anual ($97):</span>
+                        <span class="font-bold text-[#8d766c]">$14.55 USD</span>
+                      </div>
+                      <div
+                        class="text-on-surface-variant flex justify-between py-1 text-[11px] font-semibold"
+                      >
+                        <span>Vitalicia Reg. ($397):</span>
+                        <span class="font-bold text-[#8d766c]">$59.55 USD</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- STEP 2: Monthly purchases by membership -->
+              <div
+                class="bg-surface-card p-space-lg sm:p-space-xl border-warm-border/60 rounded-xl border shadow-md"
+              >
+                <div
+                  class="gap-space-sm mb-space-md flex flex-col justify-between sm:flex-row sm:items-center"
+                >
+                  <div>
+                    <span
+                      class="font-label-sm text-label-sm font-bold tracking-wider text-[#8d766c] uppercase"
+                      >Compras del mes</span
+                    >
+                    <h3
+                      class="font-headline-md text-headline-md text-on-surface"
+                    >
+                      Personas por tipo de membresía
+                    </h3>
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm hidden font-bold tracking-wider text-[#8d766c] uppercase sm:inline"
+                    >Paso 2 de 2</span
+                  >
+                </div>
+                <div
+                  class="gap-space-md mt-space-lg grid grid-cols-1 sm:grid-cols-2"
+                >
+                  <div
+                    class="p-space-md bg-surface-container-low border-warm-border/50 rounded-xl border"
+                  >
+                    <div class="gap-space-sm flex items-start justify-between">
+                      <div>
+                        <h4 class="font-title text-title font-bold">
+                          Por Bloque
+                        </h4>
+                        <p class="text-label-sm text-on-surface-variant">
+                          $43 USD por persona
+                        </p>
+                      </div>
+                      <input
+                        aria-label="Personas con membresía Por Bloque"
+                        class="font-title border-warm-border w-16 rounded-lg text-center font-extrabold"
+                        id="peopleInputBloque"
+                        max="50"
+                        min="0"
+                        oninput="setPeople('bloque', this.value)"
+                        type="number"
+                        value="0"
+                      />
+                    </div>
+                    <label
+                      class="mt-space-sm gap-space-xs text-label-sm inline-flex items-center font-semibold"
+                      ><input
+                        class="rounded text-[#8d766c] focus:ring-[#ffb1c0]"
+                        id="promoBloque"
+                        onchange="setProductPromo('bloque', this.checked)"
+                        type="checkbox"
+                      />
+                      Compra con promoción o cupón</label
+                    >
+                    <input
+                      aria-label="Personas con membresía Por Bloque"
+                      class="mt-space-md w-full accent-[#ffb1c0]"
+                      id="peopleSliderBloque"
+                      max="50"
+                      min="0"
+                      oninput="setPeople('bloque', this.value, 'slider')"
+                      type="range"
+                      value="0"
+                    />
+                    <div
+                      class="text-label-sm text-on-surface-variant flex justify-between"
+                    >
+                      <span>0</span><span>50</span>
+                    </div>
+                    <p class="mt-space-sm font-label-lg font-bold">
+                      Subtotal:
+                      <span class="text-[#8d766c]" id="subtotalBloque"
+                        >$0.00 USD</span
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="p-space-md bg-surface-container-low border-warm-border/50 rounded-xl border"
+                  >
+                    <div class="gap-space-sm flex items-start justify-between">
+                      <div>
+                        <h4 class="font-title text-title font-bold">Anual</h4>
+                        <p class="text-label-sm text-on-surface-variant">
+                          $97 USD por persona
+                        </p>
+                      </div>
+                      <input
+                        aria-label="Personas con membresía Anual"
+                        class="font-title border-warm-border w-16 rounded-lg text-center font-extrabold"
+                        id="peopleInputAnual"
+                        max="50"
+                        min="0"
+                        oninput="setPeople('anual', this.value)"
+                        type="number"
+                        value="0"
+                      />
+                    </div>
+                    <label
+                      class="mt-space-sm gap-space-xs text-label-sm inline-flex items-center font-semibold"
+                      ><input
+                        class="rounded text-[#8d766c] focus:ring-[#ffb1c0]"
+                        id="promoAnual"
+                        onchange="setProductPromo('anual', this.checked)"
+                        type="checkbox"
+                      />
+                      Compra con promoción o cupón</label
+                    >
+                    <input
+                      aria-label="Personas con membresía Anual"
+                      class="mt-space-md w-full accent-[#ffb1c0]"
+                      id="peopleSliderAnual"
+                      max="50"
+                      min="0"
+                      oninput="setPeople('anual', this.value, 'slider')"
+                      type="range"
+                      value="0"
+                    />
+                    <div
+                      class="text-label-sm text-on-surface-variant flex justify-between"
+                    >
+                      <span>0</span><span>50</span>
+                    </div>
+                    <p class="mt-space-sm font-label-lg font-bold">
+                      Subtotal:
+                      <span class="text-[#8d766c]" id="subtotalAnual"
+                        >$0.00 USD</span
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="p-space-md bg-surface-container-low border-warm-border/50 rounded-xl border"
+                  >
+                    <div class="gap-space-sm flex items-start justify-between">
+                      <div>
+                        <h4 class="font-title text-title font-bold">
+                          Vitalicia Lanzamiento
+                        </h4>
+                        <p class="text-label-sm text-on-surface-variant">
+                          $297 USD por persona
+                        </p>
+                      </div>
+                      <input
+                        aria-label="Personas con membresía Vitalicia Lanzamiento"
+                        class="font-title border-warm-border w-16 rounded-lg text-center font-extrabold"
+                        id="peopleInputVitaliciaLanz"
+                        max="50"
+                        min="0"
+                        oninput="setPeople('vitalicia_lanz', this.value)"
+                        type="number"
+                        value="0"
+                      />
+                    </div>
+                    <label
+                      class="mt-space-sm gap-space-xs text-label-sm inline-flex items-center font-semibold"
+                      ><input
+                        class="rounded text-[#8d766c] focus:ring-[#ffb1c0]"
+                        id="promoVitaliciaLanz"
+                        onchange="
+                          setProductPromo('vitalicia_lanz', this.checked)
+                        "
+                        type="checkbox"
+                      />
+                      Compra con promoción o cupón</label
+                    >
+                    <input
+                      aria-label="Personas con membresía Vitalicia Lanzamiento"
+                      class="mt-space-md w-full accent-[#ffb1c0]"
+                      id="peopleSliderVitaliciaLanz"
+                      max="50"
+                      min="0"
+                      oninput="
+                        setPeople('vitalicia_lanz', this.value, 'slider')
+                      "
+                      type="range"
+                      value="0"
+                    />
+                    <div
+                      class="text-label-sm text-on-surface-variant flex justify-between"
+                    >
+                      <span>0</span><span>50</span>
+                    </div>
+                    <p class="mt-space-sm font-label-lg font-bold">
+                      Subtotal:
+                      <span class="text-[#8d766c]" id="subtotalVitaliciaLanz"
+                        >$0.00 USD</span
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="p-space-md bg-surface-container-low border-warm-border/50 rounded-xl border"
+                  >
+                    <div class="gap-space-sm flex items-start justify-between">
+                      <div>
+                        <h4 class="font-title text-title font-bold">
+                          Vitalicia Regular
+                        </h4>
+                        <p class="text-label-sm text-on-surface-variant">
+                          $397 USD por persona
+                        </p>
+                      </div>
+                      <input
+                        aria-label="Personas con membresía Vitalicia Regular"
+                        class="font-title border-warm-border w-16 rounded-lg text-center font-extrabold"
+                        id="peopleInputVitaliciaReg"
+                        max="50"
+                        min="0"
+                        oninput="setPeople('vitalicia_reg', this.value)"
+                        type="number"
+                        value="0"
+                      />
+                    </div>
+                    <label
+                      class="mt-space-sm gap-space-xs text-label-sm inline-flex items-center font-semibold"
+                      ><input
+                        class="rounded text-[#8d766c] focus:ring-[#ffb1c0]"
+                        id="promoVitaliciaReg"
+                        onchange="
+                          setProductPromo('vitalicia_reg', this.checked)
+                        "
+                        type="checkbox"
+                      />
+                      Compra con promoción o cupón</label
+                    >
+                    <input
+                      aria-label="Personas con membresía Vitalicia Regular"
+                      class="mt-space-md w-full accent-[#ffb1c0]"
+                      id="peopleSliderVitaliciaReg"
+                      max="50"
+                      min="0"
+                      oninput="setPeople('vitalicia_reg', this.value, 'slider')"
+                      type="range"
+                      value="0"
+                    />
+                    <div
+                      class="text-label-sm text-on-surface-variant flex justify-between"
+                    >
+                      <span>0</span><span>50</span>
+                    </div>
+                    <p class="mt-space-sm font-label-lg font-bold">
+                      Subtotal:
+                      <span class="text-[#8d766c]" id="subtotalVitaliciaReg"
+                        >$0.00 USD</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right Column: Sticky Summary & Real-time Earnings Card (5 cols) -->
+            <div
+              class="gap-space-lg flex flex-col lg:sticky lg:top-28 lg:col-span-5"
+            >
+              <!-- Hero Results Card -->
+              <div
+                class="from-surface-card via-surface-card p-space-lg sm:p-space-xl border-warm-border/70 relative overflow-hidden rounded-xl border bg-gradient-to-br to-[#fff0f3] shadow-xl"
+              >
+                <div
+                  class="pointer-events-none absolute top-0 right-0 h-32 w-32 rounded-full bg-[#ffb1c0]/20 blur-2xl"
+                ></div>
+                <div class="mb-space-sm flex items-center justify-between">
+                  <div class="gap-space-2xs flex items-center">
+                    <span
+                      class="material-symbols-outlined text-[20px] text-[#8d766c]"
+                      >monetization_on</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm font-bold tracking-wider text-[#8d766c] uppercase"
+                      >Comisión del mes actual</span
+                    >
+                  </div>
+                  <span
+                    class="px-space-xs font-label-sm rounded-full bg-[#ffb1c0] py-0.5 text-[11px] font-bold text-[#4a3b34]"
+                    id="badgeTierLabel"
+                  >
+                    Boss Vitalicia (30%)
+                  </span>
+                </div>
+                <!-- Big Metric -->
+                <div
+                  class="mt-space-xs gap-space-2xs flex flex-wrap items-baseline"
+                >
+                  <span
+                    class="font-numeric-metric text-numeric-metric font-extrabold tracking-tight text-[#8d766c] sm:text-[44px]"
+                    id="totalEarningsDisplay"
+                  >
+                    $145.50
+                  </span>
+                  <span
+                    class="font-headline-md text-headline-md text-on-surface"
+                    >USD</span
+                  >
+                </div>
+                <!-- Formula transparency badge -->
+                <div
+                  class="mt-space-sm p-space-sm bg-surface-container-low/80 gap-space-2xs border-warm-border/40 flex items-center rounded-lg border"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-[#8d766c]"
+                    >calculate</span
+                  >
+                  <span
+                    class="font-body-md text-body-md text-on-surface-variant font-medium"
+                    id="formulaBreakdown"
+                  >
+                    Suma de los cuatro tipos de membresía = $0.00 USD
+                  </span>
+                </div>
+                <!-- Secondary Metrics Grid -->
+                <div
+                  class="gap-space-sm mt-space-md pt-space-md bg-surface-card/70 p-space-sm border-warm-border/50 grid grid-cols-2 rounded-xl border"
+                >
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant uppercase"
+                      >Total de personas</span
+                    >
+                    <span
+                      class="font-title text-title text-on-surface mt-0.5 font-extrabold"
+                      id="totalPeopleDisplay"
+                      >0</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant uppercase"
+                      >Tasa Aplicada</span
+                    >
+                    <span
+                      class="font-title text-title mt-0.5 font-extrabold text-[#8d766c]"
+                      id="appliedRateDisplay"
+                      >30%</span
+                    >
+                  </div>
+                </div>
+                <!-- Motivational Celebration Box -->
+                <div
+                  class="mt-space-md p-space-sm gap-space-xs flex items-start rounded-xl border border-[#ffb1c0]/40 bg-[#fff0f3]"
+                >
+                  <span
+                    class="material-symbols-outlined shrink-0 text-[22px] text-[#8d766c]"
+                    >workspace_premium</span
+                  >
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-lg text-label-lg font-bold text-[#4a3b34]"
+                      id="milestoneTitle"
+                      >¡Excelente ritmo de recomendación!</span
+                    >
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant text-[13px]"
+                      id="milestoneDesc"
+                    >
+                      Cada nueva recomendación de este mes suma directamente a
+                      tu comisión.
+                    </p>
+                  </div>
+                </div>
+                <!-- Call to action button -->
+                <div class="mt-space-lg gap-space-xs flex flex-col">
+                  <button
+                    class="py-space-sm px-space-md font-label-lg text-label-lg gap-space-xs flex w-full items-center justify-center rounded-xl bg-[#ffb1c0] font-bold text-[#4a3b34] shadow-md transition-all hover:bg-[#f89cae] active:scale-95"
+                    onclick="copySimulatorSummary()"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >share</span
+                    >
+                    <span id="copyBtnText"
+                      >Compartir Mi Meta de Comisiones</span
+                    >
+                  </button>
+                  <p
+                    class="font-label-sm text-on-surface-variant text-center text-[11px]"
+                  >
+                    Los pagos se abonan de forma automática y transparente según
+                    el calendario oficial.
+                  </p>
+                </div>
+              </div>
+              <!-- Quick Tips Mini Card -->
+              <div
+                class="bg-surface-card p-space-md border-warm-border/60 gap-space-sm flex items-center rounded-xl border shadow-sm"
+              >
+                <div
+                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#ffb1c0]/30"
+                >
+                  <span
+                    class="material-symbols-outlined text-[20px] text-[#8d766c]"
+                    >lightbulb</span
+                  >
+                </div>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant text-[13px]"
+                >
+                  <strong class="text-on-surface">Consejo Boss:</strong>
+                  Recomienda la membresía Anual o Vitalicia durante tus talleres
+                  para maximizar tu ganancia por cada recomendación directa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Informative note about membership changes -->
+          <div
+            class="mt-space-2xl bg-surface-card p-space-lg sm:p-space-2xl border-warm-border/60 rounded-xl border shadow-md"
+          >
+            <div class="gap-space-md flex items-start">
+              <div
+                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#ffb1c0]/30 text-[#8d766c]"
+              >
+                <span class="material-symbols-outlined text-[22px]"
+                  >upgrade</span
+                >
+              </div>
+              <div>
+                <div
+                  class="gap-space-2xs px-space-sm py-space-2xs font-label-sm mb-space-xs inline-flex items-center rounded-full border border-[#ffb1c0]/50 bg-[#ffb1c0]/30 font-bold text-[#4a3b34] uppercase"
+                >
+                  Cambio de membresía
+                </div>
+                <h2 class="font-headline-md text-headline-md text-on-surface">
+                  ¿Cómo se considera una actualización?
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-2xl"
+                >
+                  La referida debe esperar a que termine su bloque o año vigente
+                  y después adquiere la nueva membresía a precio completo. Para
+                  la comisión se considera una compra normal del mes; si utiliza
+                  un cupón o promoción, se aplican las tasas promocionales
+                  correspondientes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Section 5: Official Comparative Table (Matching Attached Reference) -->
+          <div
+            class="mt-space-2xl bg-surface-card p-space-lg sm:p-space-2xl border-warm-border/60 scroll-mt-28 overflow-hidden rounded-xl border shadow-md"
+            id="tabla-comisiones"
+          >
+            <div
+              class="gap-space-md mb-space-xl flex flex-col justify-between md:flex-row md:items-end"
+            >
+              <div>
+                <span
+                  class="font-label-sm text-label-sm font-bold tracking-wider text-[#8d766c] uppercase"
+                  >Tabulador Oficial</span
+                >
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                  Tabla de Comisiones The Boss Board
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-1"
+                >
+                  Valores estándar vigentes para socias Boss Vitalicia y Boss
+                  Anual.
+                </p>
+              </div>
+              <div
+                class="gap-space-xs font-label-sm text-label-sm flex items-center font-semibold text-[#8d766c]"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px] text-[#8d766c]"
+                  >verified</span
+                >
+                Pagos en USD
+              </div>
+            </div>
+            <!-- Styled Table Container matching requested palette -->
+            <p class="mb-2 text-sm font-semibold text-[#8d766c] sm:hidden">
+              Desliza horizontalmente para ver todos los datos →
+            </p>
+            <div
+              class="border-warm-border/60 w-full touch-pan-x overflow-x-auto rounded-xl border shadow-sm"
+              role="region"
+              aria-label="Tabla de comisiones con desplazamiento horizontal"
+              tabindex="0"
+            >
+              <table class="w-full min-w-[760px] border-collapse text-center">
+                <thead>
+                  <tr
+                    class="font-label-sm text-[12px] tracking-wider uppercase"
+                  >
+                    <th
+                      class="py-space-md px-space-md rounded-tl-lg bg-[#8d766c] text-left font-bold text-white"
+                    >
+                      Membresía Invitada
+                    </th>
+                    <th
+                      class="py-space-md px-space-md bg-[#8d766c] font-bold text-white"
+                    >
+                      Precio
+                    </th>
+                    <th
+                      class="py-space-md px-space-md border-x border-[#f89cae]/40 bg-[#ffb1c0] font-extrabold text-[#4a3b34]"
+                    >
+                      % Boss Vitalicia
+                    </th>
+                    <th
+                      class="py-space-md px-space-md border-r border-[#f89cae]/40 bg-[#ffb1c0] font-extrabold text-[#4a3b34]"
+                    >
+                      Ganancia USD
+                    </th>
+                    <th
+                      class="py-space-md px-space-md bg-[#8d766c] font-bold text-white"
+                    >
+                      % Boss Anual
+                    </th>
+                    <th
+                      class="py-space-md px-space-md rounded-tr-lg bg-[#8d766c] font-bold text-white"
+                    >
+                      Ganancia USD
+                    </th>
+                  </tr>
+                </thead>
+                <tbody
+                  class="divide-surface-container font-body-md text-body-md divide-y"
+                >
+                  <!-- Row 1: Por Bloque -->
+                  <tr class="hover:bg-surface-container-low transition-colors">
+                    <td
+                      class="py-space-md px-space-md text-on-surface text-left font-bold"
+                    >
+                      Por Bloque
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-on-surface-variant font-semibold"
+                    >
+                      $43 USD
+                    </td>
+                    <td
+                      class="py-space-md px-space-md bg-[#ffb1c0]/15 font-bold text-[#8d766c]"
+                    >
+                      30%
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-title bg-[#ffb1c0]/15 font-extrabold text-[#4a3b34]"
+                    >
+                      $12.90
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-on-surface font-bold"
+                    >
+                      15%
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-on-surface font-bold"
+                    >
+                      $6.45
+                    </td>
+                  </tr>
+                  <!-- Row 2: Anual -->
+                  <tr class="hover:bg-surface-container-low transition-colors">
+                    <td
+                      class="py-space-md px-space-md text-on-surface text-left font-bold"
+                    >
+                      Anual
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-on-surface-variant font-semibold"
+                    >
+                      $97 USD
+                    </td>
+                    <td
+                      class="py-space-md px-space-md bg-[#ffb1c0]/15 font-bold text-[#8d766c]"
+                    >
+                      30%
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-title bg-[#ffb1c0]/15 font-extrabold text-[#4a3b34]"
+                    >
+                      $29.10
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-on-surface font-bold"
+                    >
+                      15%
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-on-surface font-bold"
+                    >
+                      $14.55
+                    </td>
+                  </tr>
+                  <!-- Row 3: Vitalicia (Lanz.) -->
+                  <tr class="hover:bg-surface-container-low transition-colors">
+                    <td
+                      class="py-space-md px-space-md text-on-surface text-left font-bold"
+                    >
+                      Vitalicia (Lanz.)
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-on-surface-variant font-semibold"
+                    >
+                      $297 USD
+                    </td>
+                    <td
+                      class="py-space-md px-space-md bg-[#ffb1c0]/15 font-bold text-[#8d766c]"
+                    >
+                      30%
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-title bg-[#ffb1c0]/15 font-extrabold text-[#4a3b34]"
+                    >
+                      $89.10
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-on-surface font-bold"
+                    >
+                      15%
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-on-surface font-bold"
+                    >
+                      $44.55
+                    </td>
+                  </tr>
+                  <!-- Row 4: Vitalicia (Reg.) -->
+                  <tr class="hover:bg-surface-container-low transition-colors">
+                    <td
+                      class="py-space-md px-space-md text-on-surface text-left font-bold"
+                    >
+                      Vitalicia (Reg.)
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-on-surface-variant font-semibold"
+                    >
+                      $397 USD
+                    </td>
+                    <td
+                      class="py-space-md px-space-md bg-[#ffb1c0]/15 font-bold text-[#8d766c]"
+                    >
+                      30%
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-title bg-[#ffb1c0]/15 font-extrabold text-[#4a3b34]"
+                    >
+                      $119.10
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-on-surface font-bold"
+                    >
+                      15%
+                    </td>
+                    <td
+                      class="py-space-md px-space-md text-on-surface font-bold"
+                    >
+                      $59.55
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Notes and Conditions Box -->
+            <div
+              class="mt-space-xl p-space-md sm:p-space-lg bg-surface-container-low gap-space-md border-warm-border/50 flex flex-col items-start rounded-xl border sm:flex-row"
+            >
+              <div
+                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#8d766c] text-white shadow-sm"
+              >
+                <span class="material-symbols-outlined text-[22px]"
+                  >policy</span
+                >
+              </div>
+              <div
+                class="text-on-surface-variant text-body-md flex flex-col gap-1"
+              >
+                <h4 class="font-title text-title text-on-surface">
+                  Términos y Condiciones del Tabulador
+                </h4>
+                <p>
+                  • <strong>Periodos Promocionales / Cupones:</strong> Si la
+                  referida adquiere su membresía durante una promoción o aplica
+                  un cupón, la comisión es de <strong>15%</strong> para socias
+                  Boss Vitalicia y <strong>10%</strong> para socias Boss Anual.
+                </p>
+                <p>
+                  • <strong>Alcance del simulador:</strong> El resultado
+                  contempla únicamente las compras registradas durante el mes
+                  actual; no incluye proyecciones ni renovaciones futuras.
+                </p>
+                <p>
+                  • <strong>Tiempos de Cobro:</strong> Pagos transferidos
+                  mediante Stripe / PayPal una vez superado el umbral mínimo
+                  mensual reglamentario.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        // State variables
+        let currentTier = "vitalicia"; // 'vitalicia' | 'anual'
+        const peopleByProduct = {
+          bloque: 0,
+          anual: 0,
+          vitalicia_lanz: 0,
+          vitalicia_reg: 0,
+        };
+
+        const promoByProduct = {
+          bloque: false,
+          anual: false,
+          vitalicia_lanz: false,
+          vitalicia_reg: false,
+        };
+
+        const productPrices = {
+          bloque: 43,
+          anual: 97,
+          vitalicia_lanz: 297,
+          vitalicia_reg: 397,
+        };
+
+        const productElementSuffixes = {
+          bloque: "Bloque",
+          anual: "Anual",
+          vitalicia_lanz: "VitaliciaLanz",
+          vitalicia_reg: "VitaliciaReg",
+        };
+
+        // Switch Tier
+        function setUserTier(tier) {
+          currentTier = tier;
+          const cardVit = document.getElementById("tierCardVitalicia");
+          const cardAnu = document.getElementById("tierCardAnual");
+          const radioVit = document.getElementById("radioVitalicia");
+          const radioAnu = document.getElementById("radioAnual");
+
+          if (tier === "vitalicia") {
+            cardVit.className =
+              "cursor-pointer relative rounded-xl p-space-lg bg-surface-card ring-2 ring-[#ffb1c0] shadow-lg transition-all duration-200";
+            cardAnu.className =
+              "cursor-pointer relative rounded-xl p-space-lg bg-surface-container-low transition-all duration-200 hover:shadow-md";
+            radioVit.className =
+              "w-5 h-5 rounded-full bg-[#ffb1c0] flex items-center justify-center text-[#4a3b34]";
+            radioAnu.className =
+              "w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center text-transparent";
+          } else {
+            cardVit.className =
+              "cursor-pointer relative rounded-xl p-space-lg bg-surface-container-low transition-all duration-200 hover:shadow-md";
+            cardAnu.className =
+              "cursor-pointer relative rounded-xl p-space-lg bg-surface-card ring-2 ring-[#8d766c] shadow-lg transition-all duration-200";
+            radioVit.className =
+              "w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center text-transparent";
+            radioAnu.className =
+              "w-5 h-5 rounded-full bg-[#8d766c] flex items-center justify-center text-white";
+          }
+
+          recalculate();
+        }
+
+        function setProductPromo(product, isActive) {
+          promoByProduct[product] = isActive;
+          recalculate();
+        }
+
+        function setPeople(product, value) {
+          const peopleCount = clampPeople(value);
+          const suffix = productElementSuffixes[product];
+          peopleByProduct[product] = peopleCount;
+          document.getElementById("peopleInput" + suffix).value = peopleCount;
+          document.getElementById("peopleSlider" + suffix).value = peopleCount;
+          recalculate();
+        }
+
+        function clampPeople(value) {
+          const parsedValue = Number.parseInt(value, 10);
+          if (Number.isNaN(parsedValue)) return 0;
+          return Math.min(50, Math.max(0, parsedValue));
+        }
+
+        // Core Math & UI updates
+        function recalculate() {
+          let totalEarnings = 0;
+          let totalPeople = 0;
+          const appliedRates = new Set();
+
+          Object.keys(productPrices).forEach((product) => {
+            const rate = getRate(promoByProduct[product]);
+            const subtotal =
+              productPrices[product] * rate * peopleByProduct[product];
+            const suffix = productElementSuffixes[product];
+            totalEarnings += subtotal;
+            totalPeople += peopleByProduct[product];
+            if (peopleByProduct[product] > 0) appliedRates.add(rate);
+            document.getElementById("subtotal" + suffix).textContent =
+              formatCurrency(subtotal) + " USD";
+          });
+
+          // Formatting
+          if (appliedRates.size === 0) appliedRates.add(getRate(false));
+          const ratesText = [...appliedRates]
+            .sort((a, b) => b - a)
+            .map((rate) => (rate * 100).toFixed(0) + "%")
+            .join(" y ");
+          document.getElementById("totalEarningsDisplay").textContent =
+            formatCurrency(totalEarnings);
+          document.getElementById("totalPeopleDisplay").textContent =
+            totalPeople;
+          document.getElementById("appliedRateDisplay").textContent = ratesText;
+          document.getElementById("formulaBreakdown").textContent =
+            `Suma de las membresías al ${ratesText} = ${formatCurrency(totalEarnings)} USD`;
+
+          // Tier badge text
+          const tierName =
+            currentTier === "vitalicia" ? "Boss Vitalicia" : "Boss Anual";
+          document.getElementById("badgeTierLabel").textContent = tierName;
+
+          // Milestone motivational messages
+          const titleEl = document.getElementById("milestoneTitle");
+          const descEl = document.getElementById("milestoneDesc");
+          if (totalEarnings >= 1000) {
+            titleEl.textContent = "🌟 ¡Nivel Boss Diamante!";
+            descEl.textContent = `Superaste los $1,000 USD en comisiones del mes actual. Tu comunidad genera ingresos de alto impacto.`;
+          } else if (totalEarnings >= 300) {
+            titleEl.textContent = "🔥 ¡Impacto Escalar en Crecimiento!";
+            descEl.textContent = `Con más de $300 USD en comisiones este mes estás logrando un gran impacto.`;
+          } else if (totalEarnings === 0) {
+            titleEl.textContent = "Comisión del mes: $0.00 USD";
+            descEl.textContent = `Cuando registres compras referidas durante el mes, verás aquí la comisión correspondiente.`;
+          } else {
+            titleEl.textContent = "🚀 ¡Excelente ritmo de recomendación!";
+            descEl.textContent = `Cada recomendación compartida con tu enlace multiplica tu rentabilidad como socia oficial.`;
+          }
+        }
+
+        function getRate(isPromo) {
+          if (currentTier === "vitalicia") return isPromo ? 0.15 : 0.3;
+          return isPromo ? 0.1 : 0.15;
+        }
+
+        function formatCurrency(value) {
+          return (
+            "$" +
+            value.toLocaleString("en-US", {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })
+          );
+        }
+
+        // Copy goal handler
+        function copySimulatorSummary() {
+          const total = document.getElementById(
+            "totalEarningsDisplay",
+          ).textContent;
+          const totalPeople = Object.values(peopleByProduct).reduce(
+            (sum, count) => sum + count,
+            0,
+          );
+          const textToCopy = `Mi comisión de este mes en The Boss Board: ${totalPeople} ${totalPeople === 1 ? "persona referida" : "personas referidas"} = ${total} USD.`;
+
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(textToCopy).then(() => {
+              const btnText = document.getElementById("copyBtnText");
+              btnText.textContent = "¡Copiado al Portapapeles!";
+              setTimeout(() => {
+                btnText.textContent = "Compartir Mi Meta de Comisiones";
+              }, 2500);
+            });
+          }
+        }
+
+        // Initialize on load
+        document.addEventListener("DOMContentLoaded", () => {
+          setUserTier("vitalicia");
+        });
+      </script>
+    </main>
+    <footer class="w-full bg-[#8d766c] shadow-sm">
+      <div class="mx-auto w-full max-w-7xl p-4 md:py-6">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <div class="mb-2 flex items-center justify-center sm:mb-0">
+            <div class="text-xl font-semibold whitespace-nowrap text-white">
+              TheBossRoomVIP
+            </div>
+          </div>
+          <ul
+            class="mb-6 flex flex-wrap items-center justify-center text-sm font-medium text-gray-200 sm:mb-0"
+          >
+            <li>
+              <a class="me-4 hover:underline md:me-6" href="./">Bossboard</a>
+            </li>
+            <li>
+              <a class="me-4 hover:underline md:me-6" href="./#/ranking"
+                >Ranking</a
+              >
+            </li>
+            <li>
+              <a
+                class="me-4 hover:underline md:me-6"
+                href="https://www.instagram.com/_andreacazarin"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr class="my-3 border-gray-100 sm:mx-auto lg:my-3" />
+        <a
+          class="flex justify-center text-sm font-bold text-white sm:text-center"
+          href="https://github.com/codejoss"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Coding with love 🤍</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
