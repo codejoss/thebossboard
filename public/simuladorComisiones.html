@@ -817,29 +817,6 @@
                     >
                   </div>
                 </div>
-                <!-- Motivational Celebration Box -->
-                <div
-                  class="mt-space-md p-space-sm gap-space-xs flex items-start rounded-xl border border-[#ffb1c0]/40 bg-[#fff0f3]"
-                >
-                  <span
-                    class="material-symbols-outlined shrink-0 text-[22px] text-[#8d766c]"
-                    >workspace_premium</span
-                  >
-                  <div class="flex flex-col">
-                    <span
-                      class="font-label-lg text-label-lg font-bold text-[#4a3b34]"
-                      id="milestoneTitle"
-                      >¡Excelente ritmo de recomendación!</span
-                    >
-                    <p
-                      class="font-body-md text-body-md text-on-surface-variant text-[13px]"
-                      id="milestoneDesc"
-                    >
-                      Cada nueva recomendación de este mes suma directamente a
-                      tu comisión.
-                    </p>
-                  </div>
-                </div>
                 <!-- Call to action button -->
                 <div class="mt-space-lg gap-space-xs flex flex-col">
                   <button
@@ -857,8 +834,7 @@
                   <p
                     class="font-label-sm text-on-surface-variant text-center text-[11px]"
                   >
-                    Los pagos se abonan de forma automática y transparente según
-                    el calendario oficial.
+                    Los pagos se abonan de forma automática y transparente.
                   </p>
                 </div>
               </div>
@@ -908,11 +884,7 @@
                 <p
                   class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-2xl"
                 >
-                  La referida debe esperar a que termine su bloque o año vigente
-                  y después adquiere la nueva membresía a precio completo. Para
-                  la comisión se considera una compra normal del mes; si utiliza
-                  un cupón o promoción, se aplican las tasas promocionales
-                  correspondientes.
+                  La referida debe esperar a que termine su bloque o año vigente y después adquirir la nueva membresía. Para la comisión se considera una compra normal del mes; si utiliza un cupón o promoción, se aplican las tasas promocionales correspondientes.
                 </p>
               </div>
             </div>
@@ -1291,23 +1263,6 @@
           const tierName =
             currentTier === "vitalicia" ? "Boss Vitalicia" : "Boss Anual";
           document.getElementById("badgeTierLabel").textContent = tierName;
-
-          // Milestone motivational messages
-          const titleEl = document.getElementById("milestoneTitle");
-          const descEl = document.getElementById("milestoneDesc");
-          if (totalEarnings >= 1000) {
-            titleEl.textContent = "🌟 ¡Nivel Boss Diamante!";
-            descEl.textContent = `Superaste los $1,000 USD en comisiones del mes actual. Tu comunidad genera ingresos de alto impacto.`;
-          } else if (totalEarnings >= 300) {
-            titleEl.textContent = "🔥 ¡Impacto Escalar en Crecimiento!";
-            descEl.textContent = `Con más de $300 USD en comisiones este mes estás logrando un gran impacto.`;
-          } else if (totalEarnings === 0) {
-            titleEl.textContent = "Comisión del mes: $0.00 USD";
-            descEl.textContent = `Cuando registres compras referidas durante el mes, verás aquí la comisión correspondiente.`;
-          } else {
-            titleEl.textContent = "🚀 ¡Excelente ritmo de recomendación!";
-            descEl.textContent = `Cada recomendación compartida con tu enlace multiplica tu rentabilidad como socia oficial.`;
-          }
         }
 
         function getRate(isPromo) {
