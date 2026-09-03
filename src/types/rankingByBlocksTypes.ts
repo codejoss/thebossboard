@@ -8,6 +8,5 @@ export interface RankingByBlocksType {
   nickname: string;
   block_stars: number;
   block_rank: number;
-  photo_url: string | undefined;
-  number_of_block: number;
+  number_of_block: string;
 }

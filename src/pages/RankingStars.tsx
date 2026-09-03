@@ -1,20 +1,10 @@
-import React from "react";
+import { useMemo } from "react";
 import { useMembers } from "@/hooks/useMembers";
 import { useRankingByBlocks } from "@/hooks/useRankingByBlocks";
+import type { RankingByBlocksType } from "@/types/rankingByBlocksTypes";
 
 // ─── Hook de datos ─────────────────────────────────────────────────────────────
-interface RankingItem {
-  photo_url: string | undefined;
-  block_id: string;
-  block_name: string;
-  year_of_block: number;
-  member_id: string;
-  member_name: string;
-  nickname: string;
-  block_stars: number;
-  block_rank: number;
-  number_of_block: number;
-}
+type RankingItem = RankingByBlocksType;
 
 // ─── Star Badge ────────────────────────────────────────────────────────────────
 function StarBadge({ count }: { count: number }) {
@@ -64,7 +54,7 @@ function RankRow({
   membersMap: Record<string, string>;
 }) {
   const isFirst = item.block_rank === 1;
-  const photoUrl = membersMap[item.member_id] || item.photo_url;
+  const photoUrl = membersMap[item.member_id];
 
   return (
     <div
@@ -115,7 +105,7 @@ export function RankingStars() {
     : undefined;
 
   // Crear mapa de member_id -> picture_url
-  const membersMap = React.useMemo(() => {
+  const membersMap = useMemo(() => {
     const map: Record<string, string> = {};
     if (Array.isArray(membersData)) {
       membersData.forEach((member) => {

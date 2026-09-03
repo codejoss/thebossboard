@@ -15,6 +15,15 @@ export function Card({ member, onClick }: CardProps) {
   return (
     <div
       onClick={onClick}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          onClick();
+        }
+      }}
+      role="button"
+      tabIndex={0}
+      aria-label={`Ver perfil de ${member.member_name} ${member.father_last_name}`}
       className="group max-w-90 min-w-80 translate-y-8 cursor-pointer rounded-2xl border border-stone-200 bg-white p-6 whitespace-break-spaces backdrop-blur-sm transition-all duration-300 hover:scale-103 hover:shadow-xl"
     >
       {/* <!-- Profile Photo --> */}
@@ -35,7 +44,7 @@ export function Card({ member, onClick }: CardProps) {
           </h3>
           {/* Location */}
           <p className="mb-4 text-sm font-bold text-neutral-500 capitalize">
-            {member.address_city.toLowerCase()},{" "}
+            {member.address_city?.toLowerCase() ?? "Ciudad no especificada"},{" "}
             {member.address_country.toLowerCase()}
           </p>
         </div>
@@ -61,6 +70,7 @@ export function Card({ member, onClick }: CardProps) {
                   href={`http://www.instagram.com/${member.instagram_url}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Instagram de ${member.member_name}`}
                   className="transform transition-all duration-300 hover:scale-120"
                 >
                   <InstagramIcon />
@@ -71,6 +81,7 @@ export function Card({ member, onClick }: CardProps) {
                   href={`http://www.tiktok.com/@${member.tiktok_url}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`TikTok de ${member.member_name}`}
                   className="transform transition-all duration-300 hover:scale-120"
                 >
                   <TikTokIcon />
@@ -81,6 +92,7 @@ export function Card({ member, onClick }: CardProps) {
                   href={`http://www.youtube.com/@${member.youtube_url}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`YouTube de ${member.member_name}`}
                   className="transform transition-all duration-300 hover:scale-120"
                 >
                   <YouTubeIcon />
@@ -91,6 +103,7 @@ export function Card({ member, onClick }: CardProps) {
                   href={member.website_url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Sitio web de ${member.member_name}`}
                   className="text-bossDark transform font-black transition-all duration-300 hover:scale-120"
                 >
                   <img

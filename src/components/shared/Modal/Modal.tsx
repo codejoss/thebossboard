@@ -26,6 +26,21 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
         if (e.key === "Escape") {
           onClose();
         }
+        if (e.key === "Tab" && modalRef.current) {
+          const focusable = modalRef.current.querySelectorAll<HTMLElement>(
+            'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+          );
+          const first = focusable[0];
+          const last = focusable[focusable.length - 1];
+          if (!first || !last) return;
+          if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+          } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+          }
+        }
       };
 
       document.addEventListener("keydown", handleEscape);
@@ -40,21 +55,14 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
 
   if (!isOpen || !member) return null;
 
-  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (e.target !== e.currentTarget) {
-      onClose();
-    }
-  };
-
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
-      onClick={handleBackdropClick}
       role="dialog"
       aria-modal="true"
-      aria-labelledby="modal-title"
+      aria-labelledby="modal-name"
     >
-      <div className="absolute inset-0 bg-stone-900/50" />
+      <div className="absolute inset-0 bg-stone-900/50" onClick={onClose} />
 
       {/* Interior modal */}
       <div
@@ -66,7 +74,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
         {/* Close Button */}
         <button
           onClick={onClose}
-          aria-label="Close modal"
+          aria-label="Cerrar ventana"
           className="bg-bossDark hover:bg-bossPink fixed right-6 z-10 flex h-10 w-10 items-center justify-center rounded-full text-center text-3xl font-bold text-white transition-colors duration-200 hover:text-black md:absolute md:top-3 md:right-3"
         >
           ×
@@ -96,6 +104,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
                   href={`http://www.instagram.com/${member.instagram_url}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Instagram de ${member.member_name}`}
                   className="transform transition-all duration-300 hover:scale-120"
                 >
                   <InstagramIcon size={socialIconSize} />
@@ -106,6 +115,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
                   href={`http://www.tiktok.com/@${member.tiktok_url}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`TikTok de ${member.member_name}`}
                   className="transform transition-all duration-300 hover:scale-120"
                 >
                   <TikTokIcon size={socialIconSize} />
@@ -116,6 +126,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
                   href={`http://www.youtube.com/@${member.youtube_url}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`YouTube de ${member.member_name}`}
                   className="transform transition-all duration-300 hover:scale-120"
                 >
                   <YouTubeIcon size={socialIconSize} />
@@ -126,6 +137,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
                   href={member.website_url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Sitio web de ${member.member_name}`}
                   className="text-bossDark transform font-black transition-all duration-300 hover:scale-120"
                 >
                   <img
@@ -168,8 +180,8 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
                 Ubicación:
               </span>
               <span id="modal-location" className="capitalize">
-                {member.address_city.toLowerCase()},{" "}
-                {member.address_state.toLowerCase()},{" "}
+                {member.address_city?.toLowerCase() ?? "Ciudad no especificada"}
+                , {member.address_state.toLowerCase()},{" "}
                 {member.address_country.toLowerCase()}
               </span>
             </div>
@@ -178,7 +190,7 @@ export function Modal({ isOpen, onClose, member }: ModalProps) {
               <span className="w-20 font-semibold text-stone-700">
                 Profesión:
               </span>
-              <span id="modal-location">
+              <span>
                 {member.nickname === "Andrea Cazarín"
                   ? member.career
                   : formatFirstLetterCap(member.career)}

@@ -1,19 +1,24 @@
-import { supabase } from '../lib/supabase';
-import type { GridSettings, SortMode } from '../types/gridSettingsTypes';
+import { supabase } from "../lib/supabase";
+import type { GridSettings, SortMode } from "../types/gridSettingsTypes";
 
 export const getGridSettings = async (): Promise<SortMode> => {
   const { data, error } = await supabase
-    .from('grid_settings')
-    .select('*')
-    .eq('is_active', true)
-    .order('updated_at', { ascending: false })
+    .from("grid_settings")
+    .select("sort_mode")
+    .eq("is_active", true)
+    .order("updated_at", { ascending: false })
     .limit(1)
-    .single<GridSettings>();
+    .maybeSingle<Pick<GridSettings, "sort_mode">>();
 
   if (error) {
-    // Si no hay configuración activa, usa el valor por defecto
-    console.warn('No active grid settings found, defaulting to created_at', error.message);
-    return 'created_at';
+    throw new Error(
+      `No se pudo cargar la configuración del grid: ${error.message}`,
+    );
+  }
+
+  if (!data) return "created_at";
+  if (data.sort_mode !== "created_at" && data.sort_mode !== "stars") {
+    throw new Error(`Modo de ordenamiento inválido: ${data.sort_mode}`);
   }
 
   return data.sort_mode;

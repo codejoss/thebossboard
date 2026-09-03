@@ -4,7 +4,7 @@ export function Footer() {
   const socialMediaInfo = [
     {
       name: "Ranking",
-      url: "/thebossboard/ranking",
+      url: "/ranking",
     },
     {
       name: "Instagram",
@@ -25,12 +25,13 @@ export function Footer() {
           <ul className="mb-6 flex flex-wrap items-center justify-center text-sm font-medium text-gray-200 sm:mb-0 dark:text-gray-100">
             {/* URLs build */}
             {socialMediaInfo.map((element, index) => {
+              const isExternal = element.url.startsWith("http");
               return (
                 <li key={index}>
                   <Link
                     to={element.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target={isExternal ? "_blank" : undefined}
+                    rel={isExternal ? "noopener noreferrer" : undefined}
                     className="me-4 hover:underline md:me-6"
                   >
                     {element.name}

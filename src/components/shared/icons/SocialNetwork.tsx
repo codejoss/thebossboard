@@ -19,6 +19,7 @@ export const InstagramIcon = ({ size, width, height }: SocialIconProps) => {
       width={resolvedWidth}
       height={resolvedHeight}
       viewBox="0 0 50 50"
+      aria-hidden="true"
     >
       <path
         fill={colorIcons}
@@ -40,6 +41,7 @@ export const TikTokIcon = ({ size, width, height }: SocialIconProps) => {
       width={resolvedWidth}
       height={resolvedHeight}
       viewBox="0 0 50 50"
+      aria-hidden="true"
     >
       <path
         fill={colorIcons}
@@ -60,6 +62,7 @@ export const YouTubeIcon = ({ size, width, height }: SocialIconProps) => {
       width={resolvedWidth}
       height={resolvedHeight}
       viewBox="0 0 50 50"
+      aria-hidden="true"
     >
       <path
         fill={colorIcons}
